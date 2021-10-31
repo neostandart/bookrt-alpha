@@ -1,0 +1,57 @@
+<!doctype html>
+
+<div id="coverpage" class="bk-page">
+	<style>
+		.bk-page#coverpage .page-content {
+			padding-top: 48px;
+			display: grid;
+			grid-template-rows: auto 1fr auto;
+		}
+
+		.bk-page#coverpage .page-content #coverheader {
+			grid-row: 1;
+		}
+
+		.bk-page#coverpage .page-content #imageframe {
+			grid-row: 2;
+			overflow: hidden;
+			opacity: 0;
+			display: flex;
+			align-items: center;
+		}
+
+		.bk-page#coverpage .page-content #imageframe.page-enter-finish {
+			opacity: 1;
+		}
+
+		.bk-page#coverpage .page-content #imageframe.page-enter-action {
+			opacity: 1;
+			transition: opacity 3s;
+		}
+
+		.bk-page#coverpage .page-content #imageframe #SpashImage {
+			max-height: 100%;
+		}
+
+		.bk-page#coverpage .page-content #coverfooter {
+			grid-row: 3;
+			padding-bottom: 0.25rem;
+		}
+	</style>
+
+	<div class="page-content fav-text-dark" style="border:none;">
+		<div id="coverheader">
+			<h5 class="text-second text-center my-5">header</h5>
+		</div>
+
+		<div id="imageframe">
+			<img id="SpashImage" class="img-fluid mx-auto d-block" src="/_assets/welcome.png" alt="Splash Image">
+		</div>
+
+		<div id="coverfooter">
+			<div class="fav-bg-dark" style="height:4px; margin-top:1rem; margin-bottom:1rem;"></div>
+			<h5 class="text-second text-center my-5">footer</h5>
+		</div>
+	</div>
+</div>
+<!-- END bk-page -->

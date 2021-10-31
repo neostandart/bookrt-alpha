@@ -1,0 +1,76 @@
+<!doctype html>
+
+<div class="bk-page">
+	<style>
+		.bk-page #MasterHeader {
+			position: relative;
+			display: grid;
+			grid-template-columns: auto 1fr;
+			grid-template-rows: auto auto;
+			width: 100%;
+			text-align: center;
+			border-bottom-width: 4px;
+			border-bottom-style: solid;
+		}
+
+		.bk-page #MasterHeader #Logo {
+			grid-row: 1 / span 2;
+			grid-column: 1;
+			height: 48px;
+		}
+
+		.bk-page #MasterHeader #caption {
+			grid-row: 1;
+			grid-column: 2;
+			align-self: center;
+			margin-bottom: 0;
+		}
+
+		.bk-page #MasterHeader #title {
+			grid-row: 2;
+			grid-column: 2;
+			font-size: 1.25rem;
+			line-height: 1;
+			margin-bottom: 0.25rem;
+		}
+
+		/* Adaptive */
+		@media (min-width: 576px) {
+			.bk-page #MasterHeader #Logo {
+				height: 64px;
+			}
+
+			.bk-page #MasterHeader #title {
+				font-size: 1.5rem;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.bk-page #MasterHeader #Logo {
+				height: 80px;
+			}
+
+			.bk-page #MasterHeader #title {
+				font-size: 1.75rem;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.bk-page #MasterHeader #title {
+				font-size: 2rem;
+			}
+		}
+	</style>
+
+	<header id="MasterHeader" class="page-header py-1 fav-text-dark fav-br-middle shell-padding-right">
+		<img id="Logo" class="ms-1 ms-md-2" data-src="" src="/_assets/logo-small.png" />
+		<h6 id="caption"><a href="https://www.vsu.ru/" style="color:inherit;" target="_blank" data-app="name"></a>
+		</h6>
+		<h2 id="title" data-str="~booktitle"></h2>
+	</header>
+
+	<div class="page-content container">
+		<div class="bk-booknav mt-2 mt-md-3"></div>
+	</div>
+</div>
+<!-- END bk-page -->

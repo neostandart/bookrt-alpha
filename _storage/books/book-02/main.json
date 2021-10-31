@@ -1,0 +1,147 @@
+{
+  "id": "a8d8afc-01",
+  "version": "0.1.0",
+  "name": "Книга 02 (демонстрация)",
+  "description": "Description к Демонстрационная книга",
+  "langs": "ru,en",
+  "style": "book.css",
+  "contents": {
+    "structure": [
+      {
+        "type": "page",
+        "properties": {
+          "kind": "contents",
+          "path": "pages/master.html",
+          "title": "Оглавление",
+          "thumb": "Contents",
+          "life": "persistent"
+        }
+      },
+      {
+        "type": "page",
+        "label": "Обложка",
+        "image": {
+          "class": "img-page-welcome"
+        },
+        "properties": {
+          "kind": "cover",
+          "scroll": false,
+          "path": "pages/cover.html",
+          "thumb": "PageCover",
+          "animation": {
+            "name": "appearance",
+            "selector": "#imageframe",
+            "delay": 500
+          }
+        }
+      },
+      {
+        "type": "unit",
+        "label": "ИДТИ-ХОДИТЬ",
+        "image": "_assets/images/masternav/paragraph.svg",
+        "nest": [
+          {
+            "type": "page",
+            "label": "Теория",
+            "image": {
+              "class": "img-page-text"
+            },
+            "properties": {
+              "kind": "normal",
+              "life": "forever",
+              "path": "pages/01-idti-hodit'/theory/theory.html",
+              "title": "Изучение"
+            }
+          },
+          {
+            "type": "page",
+            "label": "Упражнения",
+            "image": {
+              "class": "img-page-exercise"
+            },
+            "properties": {
+              "kind": "normal",
+              "life": "forever",
+              "path": "pages/01-idti-hodit'/training/training.html",
+              "title": "Закрепление"
+            }
+          },
+          {
+            "type": "page",
+            "label": "Контроль",
+            "image": {
+              "class": "img-page-test"
+            },
+            "properties": {
+              "kind": "normal",
+              "life": "forever",
+              "path": "pages/01-idti-hodit'/test/test.html",
+              "title": "Проверьте свои знания"
+            }
+          }
+        ]
+      },
+
+      {
+        "type": "unit",
+        "label": "ЕХАТЬ-ЕЗДИТЬ",
+        "image": "_assets/images/masternav/paragraph.svg",
+        "nest": [
+          {
+            "type": "page",
+            "label": "Теория",
+            "image": {
+              "class": "img-page-text"
+            },
+            "properties": {
+              "id": "688A5",
+              "kind": "normal",
+              "life": "persistent",
+              "path": "pages/02-ekhat'-ezdit'/theory/theory.html",
+              "title": "Изучение"
+            }
+          },
+          {
+            "type": "page",
+            "label": "Упражнения",
+            "image": {
+              "class": "img-page-exercise"
+            },
+            "properties": {
+              "kind": "normal",
+              "life": "persistent",
+              "path": "pages/02-ekhat'-ezdit'/training/training.html",
+              "title": "Закрепление"
+            }
+          },
+          {
+            "type": "page",
+            "label": "Контроль",
+            "image": {
+              "class": "img-page-test"
+            },
+            "properties": {
+              "kind": "normal",
+              "life": "forever",
+              "path": "pages/02-ekhat'-ezdit'/test/test.html",
+              "title": "Проверьте свои знания"
+            }
+          }
+        ]
+      },
+      {
+        "type": "page",
+        "label": "Итоговый тест",
+        "image": {
+          "class": "img-page-test"
+        },
+        "properties": {
+          "kind": "normal",
+          "life": "persistent",
+          "path": "pages/03-kontrol'/page.html",
+          "title": "Итоговый тест"
+        }
+      }
+    ]
+  }
+}
