@@ -1,0 +1,19 @@
+{
+  "actual": {
+    "caption": "Текущие объявления",
+    "path": "./annc-data/annc-2020.json"
+  },
+  "archive": {
+    "caption": "Архив",
+    "refs": [
+      {
+        "caption": "за 2018",
+        "path": "./annc-data/annc-2018.json"
+      },
+      {
+        "caption": "за 2019",
+        "path": "./annc-data/annc-2019.json"
+      }
+    ]
+  }
+}

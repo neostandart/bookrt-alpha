@@ -1,0 +1,289 @@
+{
+  "id": "a923881-01",
+  "version": "0.1.0",
+  "name": "Книга 01 (сайт кафедры)",
+  "description": "Description к \"Книга 01 (сайт кафедры)\"",
+  "langs": "ru,en",
+  "style": "book.css",
+  "contents": {
+    "structure": [
+      {
+        "type": "page",
+        "properties": {
+          "kind": "contents",
+          "path": "pages/master.html",
+          "title": "Содержимое сайта",
+          "thumb": "Contents",
+          "life": "persistent"
+        }
+      },
+      {
+        "exclude": false,
+        "type": "page",
+        "label": "Объявление!",
+        "image": {
+          "class": "img-page-annc"
+        },
+        "class": "top-navpage",
+        "properties": {
+          "kind": "normal",
+          "path": "pages/_top/top-annc-page.html"
+        }
+      },
+      {
+        "type": "pad",
+        "exclude": false,
+        "properties": "<div class='nav-sep my-4' style='height: 4px;background-color:orange;'></div>"
+      },
+      {
+        "type": "page",
+        "label": "Добро пожаловать!",
+        "image": {
+          "class": "img-page-welcome"
+        },
+        "properties": {
+          "kind": "cover",
+          "scroll": false,
+          "path": "pages/cover.html",
+          "title": "Добро пожаловать!",
+          "thumb": "PageCover",
+          "animation": {
+            "name": "appearance",
+            "selector": "#imageframe",
+            "delay": 500
+          }
+        }
+      },
+      {
+        "type": "unit",
+        "label": "О кафедре",
+        "image": "_assets/images/masternav/depart-about.svg",
+        "nest": [
+          {
+            "type": "page",
+            "label": "Историческая справка",
+            "image": {
+              "class": "img-page-history"
+            },
+            "properties": {
+              "kind": "normal",
+              "life": "persistent",
+              "path": "pages/department/history/page.html",
+              "title": "Историческая справка"
+            }
+          },
+          {
+            "type": "page",
+            "label": "Сотрудники",
+            "image": {
+              "class": "img-page-persons"
+            },
+            "properties": {
+              "id": "238e8",
+              "kind": "normal",
+              "path": "pages/department/persons/page.html",
+              "title": "Сотрудники",
+              "life": "persistent"
+            }
+          },
+          {
+            "type": "page",
+            "label": "Страница 25",
+            "image": {
+              "class": "img-page-it"
+            },
+            "properties": {
+              "kind": "normal",
+              "path": "pages/department/page-25/page.html",
+              "title": "Заголовок Страница 25"
+            }
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "label": "Научная деятельность",
+        "image": "_assets/images/masternav/depart-science.svg",
+        "nest": [
+          {
+            "type": "page",
+            "label": "Пустая страница",
+            "image": {
+              "class": "img-page-text"
+            },
+            "properties": {
+              "kind": "normal",
+              "life": "persistent",
+              "path": "pages/science/blank/page.html",
+              "title": "???"
+            }
+          },
+          {
+            "type": "folder",
+            "label": "Материалы научных сессий",
+            "image": "_assets/images/masternav/folder-docs.svg",
+            "nest": [
+              {
+                "type": "page",
+                "label": "Научная сессия 2020",
+                "image": {
+                  "class": "img-page-links"
+                },
+                "properties": {
+                  "id": "0db3b",
+                  "kind": "normal",
+                  "path": "pages/science/session-mats/2020/page.html",
+                  "title": "Научная сессия 2020",
+                  "life": "persistent"
+                }
+              },
+              {
+                "type": "page",
+                "label": "Научная сессия 2021",
+                "image": {
+                  "class": "img-page-links"
+                },
+                "properties": {
+                  "id": "0db4c",
+                  "kind": "normal",
+                  "path": "pages/science/session-mats/2021/page.html",
+                  "title": "Научная сессия 2021",
+                  "life": "persistent"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "label": "Для преподавателей",
+        "image": "_assets/images/masternav/for-teacher.svg",
+        "nest": [
+          {
+            "type": "page",
+            "label": "Объявления",
+            "image": {
+              "class": "img-page-annc"
+            },
+            "properties": {
+              "kind": "normal",
+              "path": "pages/for-teacher/annc/page.html",
+              "title": "Объявления",
+              "life": "transit"
+            }
+          }
+        ]
+      },
+      {
+        "type": "unit",
+        "label": "Для студентов",
+        "image": "_assets/images/masternav/for-student.svg",
+        "nest": [
+          {
+            "type": "page",
+            "label": "Объявления",
+            "image": {
+              "class": "img-page-annc"
+            },
+            "properties": {
+              "kind": "normal",
+              "path": "pages/for-students/annc/page.html",
+              "title": "Объявления"
+            }
+          },
+          {
+            "type": "page",
+            "label": "Расписания",
+            "image": {
+              "class": "img-page-schedule"
+            },
+            "properties": {
+              "kind": "normal",
+              "path": "pages/for-students/schedule/page.html"
+            }
+          }
+        ]
+      },
+      {
+        "type": "pad",
+        "properties": "<div class='nav-sep my-2 py-2'></div>"
+      },
+      {
+        "type": "unit",
+        "label": "Учебные материалы",
+        "image": "_assets/images/masternav/materials.svg",
+        "nest": [
+          {
+            "type": "page",
+            "label": "Ссылки на учебные ресурсы",
+            "image": {
+              "class": "img-page-links"
+            },
+            "properties": {
+              "kind": "normal",
+              "path": "pages/materials/matlinks/page.html",
+              "title": "Ссылки на учебные ресурсы"
+            }
+          },
+          {
+            "type": "folder",
+            "label": "Методические пособия",
+            "image": "_assets/images/masternav/folder-books.svg",
+            "nest": [
+              {
+                "exclude": false,
+                "type": "innerbook",
+                "label": "Методическое пособие (демо)",
+                "info": "Краткое описание ... и т.п.",
+                "nest": [
+                  {
+                    "type": "page",
+                    "label": "Страница",
+                    "properties": {
+                      "id": "238f7",
+                      "number": "start",
+                      "kind": "normal",
+                      "path": "pages/materials/textbook-demo/page-01.html",
+                      "life": "transit"
+                    }
+                  },
+                  {
+                    "type": "page",
+                    "label": "Страница",
+                    "properties": {
+                      "number": "next",
+                      "kind": "normal",
+                      "path": "pages/materials/textbook-demo/page-02/page.html",
+                      "life": "transit"
+                    }
+                  },
+                  {
+                    "type": "page",
+                    "label": "Страница",
+                    "properties": {
+                      "number": "next",
+                      "kind": "normal",
+                      "path": "pages/materials/textbook-demo/page-03.html",
+                      "life": "persistent"
+                    }
+                  },
+                  {
+                    "type": "page",
+                    "label": "Страница",
+                    "properties": {
+                      "number": "next",
+                      "kind": "normal",
+                      "path": "pages/materials/textbook-demo/page-04.html",
+                      "life": "persistent"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

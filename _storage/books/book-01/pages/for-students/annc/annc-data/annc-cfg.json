@@ -1,0 +1,11 @@
+{
+  "actual": {
+    "caption": "Текущие объявления",
+    "path": "./annc-data/annc-2020.json"
+  },
+  "archive": {
+    "caption": "Архив",
+    "refs": [
+    ]
+  }
+}

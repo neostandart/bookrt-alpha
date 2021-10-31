@@ -1,0 +1,80 @@
+<!doctype html>
+
+<div class="bk-page">
+	<style>
+		.page-body .floatimage {
+			max-width: 180px;
+		}
+
+		/* Adaptive */
+		@media (min-width: 576px) {
+			.page-body .floatimage {
+				max-width: 220px;
+			}
+		}
+
+		@media (min-width: 768px) {
+			.page-body .floatimage {
+				max-width: 250px;
+			}
+		}
+	</style>
+
+	<div class="page-header"></div>
+
+	<div class="page-content container">
+		<div class="page-title" data-prop="title"></div>
+
+		<div class="bk-text text-justify">
+			<p>Параграф текст текст текст</p>
+
+			<p>Параграф текст текст текст</p>
+
+			<p>Параграф текст текст текст</p>
+
+			<!-- /// -->
+
+			<div class="display-4 mt-4 mb-3 ps-3 fav-text-dark fav-grad-lr-light">2018 -</div>
+			<div class="d-flex flex-row align-items-center">
+				<img class="floatimage" src="./images/employee-01.jpg" alt="ФИО">
+				<div class="ms-3 bk-h4 fav-text-dark">Фамилия<br />Имя Отчество</div>
+			</div>
+
+			<p class="mt-2">Возглавляет кафедру ...</p>
+
+			<p>Параграф текст текст текст</p>
+
+			<p>Параграф текст текст текст</p>
+
+			<!-- /// -->
+
+			<div class="display-4 mt-4 mb-3 ps-3 py-2 font-italic fav-text-dark text-center fav-grad-lr-light">
+				Кафедра сегодня
+			</div>
+
+			<figure class="figure">
+				<img class="figure-img img-fluid rounded" src="./images/staff.jpg" alt="Кафедра сегодня">
+				<figcaption class="h6 fav-text-dark">Сотрудники кафедры ...</figcaption>
+			</figure>
+
+			<p class="mb-0">Помимо исследований по ###, на кафедре проводятся исследования в
+				области «###»:</p>
+			<ul>
+				<li>###</li>
+				<li>###</li>
+				<li>###</li>
+			</ul>
+
+			<p>Параграф текст текст текст</p>
+			<p>Параграф текст текст текст</p>
+			<p>Параграф текст текст текст</p>
+			<p>Параграф текст текст текст</p>
+			<p>Параграф текст текст текст</p>
+		</div>
+
+		<!-- /// -->
+
+		<div class="mt-5" data-control="RibbonGallery" data-init="./gallary/gallary.json"></div>
+	</div>
+</div>
+<!-- END bk-page -->

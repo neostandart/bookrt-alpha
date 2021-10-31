@@ -1,0 +1,61 @@
+.bk-booknav .img-page-welcome {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-welcome.svg");
+  mask-image: url("./../_assets/images/masternav/page-welcome.svg");
+}
+.bk-booknav .img-page-text {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-text.svg");
+  mask-image: url("./../_assets/images/masternav/page-text.svg");
+}
+.bk-booknav .img-page-annc {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-annc.svg");
+  mask-image: url("./../_assets/images/masternav/page-annc.svg");
+}
+.bk-booknav .img-page-history {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-history.svg");
+  mask-image: url("./../_assets/images/masternav/page-history.svg");
+}
+.bk-booknav .img-page-it {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-it.svg");
+  mask-image: url("./../_assets/images/masternav/page-it.svg");
+}
+.bk-booknav .img-page-persons {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-persons.svg");
+  mask-image: url("./../_assets/images/masternav/page-persons.svg");
+}
+.bk-booknav .img-page-schedule {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-schedule.svg");
+  mask-image: url("./../_assets/images/masternav/page-schedule.svg");
+}
+.bk-booknav .img-page-links {
+  -webkit-mask-size: 48px 48px;
+  mask-size: 48px 48px;
+  -webkit-mask-image: url("./../_assets/images/masternav/page-links.svg");
+  mask-image: url("./../_assets/images/masternav/page-links.svg");
+}
+.bk-booknav .top-navpage {
+  color: orange !important;
+  background-color: lightblue !important;
+}
+
+[data-control=MathBox] span.math {
+  font-size: 1.1em;
+  color: darkred;
+}
+[data-control=MathBox] div.math {
+  font-size: 1.3em;
+  color: blue;
+}

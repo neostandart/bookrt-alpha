@@ -1,0 +1,56 @@
+<!doctype html>
+
+<div class="bk-page">
+	<div class="page-header"></div>
+
+	<div class="page-content container">
+
+		<!-- Prompt -->
+		<div class="ctr-prompt" data-control="PromptOnce" data-init='{"autohide": 15000}'>
+			<div id="caption" class="mb-2"><span class="h2 fs fs-warning-d"></span><span class="h3 ms-2">Внимание</span></div>
+			<div id="content" style="max-width: 400px;text-align: justify;">
+				<h5>1) Чтобы раскрыть/свер&shy;нуть фор&shy;мулу в уве&shy;личен&shy;ном виде: щёл&shy;кни&shy;те по ней мышью (или паль&shy;цем). Окно с фор&shy;му&shy;лой можно пере&shy;ме&shy;щать по эк&shy;рану ис&shy;поль&shy;зуя его
+					за&shy;го&shy;ло&shy;вок.</h5>
+
+				<img src="./img/math-prompt-01.png" style="display: block; max-height: 250px; margin-left: auto; margin-right: auto; padding-left: 2rem;padding-right: 2rem;">
+
+				<h5 class="mt-3">2) Формулы с допол&shy;нитель&shy;ным ком&shy;мен&shy;та&shy;рием имеют впе&shy;реди зна&shy;чок
+					<span class="btn btn-sm rounded-circle btn-info fs fs-info"></span>. Щёл&shy;кни&shy;те по нему чтобы пока&shy;зать/скры&shy;ть ком&shy;мен&shy;тарий.
+				</h5>
+			</div>
+		</div>
+
+		<!-- MathBox Control -->
+		<div data-control="MathBox" setclass="#number:fav-bg-lightest fav-text-dark rounded">
+			<div class="text-primary text-center mt-2 mb-3 font-italic bk-h3">Примеры отоб&shy;раже&shy;ния
+				мате&shy;мати&shy;чес&shy;ких фор&shy;мул</div>
+
+			<h4>1) Формула внутри текста</h4>
+			<p>Для записи формул в исходной разметке страниц виртуальных учебников используется
+				текстовый формат <a href="https://en.wikipedia.org/wiki/TeX">TeX</a>, а их непосредственный
+				рендеринг (отображение) осуществляется средствами программной библиотеки <a href="https://www.mathjax.org/">MathJax</a>. Формулы могут быть встроены в текст, н-р:
+				<span class="math">k_{n+1} = n^2 + k_n^2 -
+					k_{n-1}</span>, а могут отображаться отдельными <b>блоками</b> (как показано далее).
+			</p>
+			<p>Дополнительно формулы могут оснащаться всплывающими комментариями и нумероваться. Любую
+				формулу можно открыть в отдельном окне в увеличенном виде щёлкнув по ней (мышью или
+				пальцем). Внешнее оформление формул и их размер могут задаваться для каждого конкретного
+				случая, или целиком для всей страницы.</p>
+
+			<h4 class="mt-3">2) Формула отдельным блоком</h4>
+			<div class="math">x = {-b \pm \sqrt{b^2-4ac} \over
+				2a}.</div>
+
+			<h4 class="mt-3">3) Формула отдельным блоком с номером</h4>
+			<div class="math" data-number="(1.2)">\frac{n!}{k!(n-k)!} = \binom{n}{k}</div>
+
+			<h4 class="mt-3">4) Формула с дополнительным комментарием</h4>
+			<div class="math" data-number="(1.3)" data-comment="Это комментарий к формуле который может содержать любой <span class='text-danger font-italic font-weight-bold'>форматированный</span> текст.">\int_0^\infty e^{-x}\,\mathrm{d}x</div>
+
+			<p>Дополнительными всплывающими комментариями могут также оснащаться формулы <span class="math"
+					data-comment="Это комментарий к формуле который может содержать любой <span class='text-danger font-italic font-weight-bold'>форматированный</span> текст.">f(n) = n^5 + 4n^2 + 2 |_{n=17}</span> находящиеся внутри текста.</p>
+
+		</div><!-- END MathBox -->
+	</div>
+</div>
+<!-- END bk-page -->

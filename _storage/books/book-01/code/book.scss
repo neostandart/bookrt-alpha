@@ -1,0 +1,67 @@
+.bk-booknav {
+  //
+  //	Page Link Images
+  //
+  & .img-page-welcome {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-welcome.svg");
+  }
+
+  & .img-page-text {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-text.svg");
+  }
+
+  & .img-page-annc {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-annc.svg");
+  }
+
+  & .img-page-history {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-history.svg");
+  }
+
+  & .img-page-it {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-it.svg");
+  }
+
+  & .img-page-persons {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-persons.svg");
+  }
+
+  & .img-page-schedule {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-schedule.svg");
+  }
+
+  & .img-page-links {
+    mask-size: 48px 48px;
+    mask-image: url("./../_assets/images/masternav/page-links.svg");
+  }
+
+  & .top-navpage {
+    color: orange !important;
+    background-color: lightblue !important;
+  }
+} // END .bk-booknav
+
+//
+//	Materials
+//
+
+//	MathBox
+
+[data-control="MathBox"] {
+  & span.math {
+    font-size: 1.1em;
+    color: darkred;
+  }
+
+  & div.math {
+    font-size: 1.3em;
+    color: blue;
+  }
+}
