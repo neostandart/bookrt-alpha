@@ -1,0 +1,53 @@
+{
+  "msgBrowserIncompat": "You browser is incompatible with this application!",
+  "msgBookSomewhereOpened": "This Book is already opened in another window!",
+
+  "txtOpenBtn": "Open",
+  "txtNewBtn": "New",
+  "txtEditBtn": "Edit",
+  "txtDelBtn": "Delete",
+  "txtCloseBtn": "Close",
+  "txtSaveBtn": "Save",
+  "txtYesBtn": "Yes",
+  "txtNoBtn": "No",
+  "txtCancelBtn": "Cancel",
+  "txtSelectBtn": "Select",
+  "txtCollapseBtn": "Collapse",
+  "txtExpandBtn": "Expand",
+
+  "capMessage": "Message",
+  "capAttention": "Attention",
+  "capWarning": "Warning",
+  "capDanger": "Danger",
+  "capDescription": "Description",
+  "capName": "Name",
+  "capId": "Id",
+  "capErr": "Error",
+  "capErrBookOpen": "Error while opening the Book",
+  "capCloseRequest": "Request for close",
+
+  "ttGoStart": "Go to start",
+  "ttGoEnd": "Go to end",
+  "ttCollapse": "Collapse",
+  "ttCollapseAll": "Collapse all",
+  "ttCollapseAllElems": "Collapse all elements",
+
+  "quCloseBook": "Are you sure you want to close this book?",
+
+  "txtNoData": "no data",
+
+  "errBookOpen": "Couldn't open the Book ({0}).",
+  "errBookPageFormat": "Invalid the Book Page format/structure ({0}).",
+  "errBookStringsLoad": "Failed to load a string resource for the Book. (BookName:{0} | Lang:{1})",
+  "errLibStringsLoad": "Failed to load a string resource for the Library. (Library:{0} | Lang:{1})",
+  "errStringsLoad": "Failed to load a Strings Resource file | {0}",
+
+  "errInvalidTemplRef": "Invalid the inner path for LibraryItem Template ({0}).",
+  "errTemplateNotFound": "The Template not found. ({0})",
+  "errTemplateNotFetched": "The Template was not fetched. ({0})",
+  "errTemplateWrong": "The Template is incorrect. ({0})",
+  "errGetCtrInitData": "Failed to get data for ActionControl initialization.",
+  "errCatalogParse": "The Book Catalog parsing failed.",
+  "errCatalogFormat": "Incorrect format of the Catalog  ({0}).",
+  "errInvalidLibRef": "Invalid the Library Reference."
+}

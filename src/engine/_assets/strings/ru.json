@@ -1,0 +1,53 @@
+{
+  "msgBrowserIncompat": "Ваш браузер несовместим с этим приложением!",
+  "msgBookSomewhereOpened": "Эта Книга уже открыта в другом окне!",
+
+  "txtOpenBtn": "Открыть",
+  "txtNewBtn": "Новый",
+  "txtEditBtn": "Изменить",
+  "txtDelBtn": "Удалить",
+  "txtCloseBtn": "Закрыть",
+  "txtSaveBtn": "Сохранить",
+  "txtYesBtn": "Да",
+  "txtNoBtn": "Нет",
+  "txtCancelBtn": "Отмена",
+  "txtSelectBtn": "Выбрать",
+  "txtCollapseBtn": "Свернуть",
+  "txtExpandBtn": "Развернуть",
+
+  "capMessage": "Сообщение",
+  "capAttention": "Внимание",
+  "capWarning": "Предупреждение",
+  "capDanger": "Опасность",
+  "capName": "Имя",
+  "capId": "ID",
+  "capDescription": "Описание",
+  "capErr": "Ошибка",
+  "capErrBookOpen": "Ошибка при открытии Книги",
+  "capCloseRequest": "Запрос на закрытие",
+
+  "ttGoStart": "Перейти к началу",
+  "ttGoEnd": "Перейти к концу",
+  "ttCollapse": "Свернуть",
+  "ttCollapseAll": "Свернуть всё",
+  "ttCollapseAllElems": "Свернуть все элементы",
+
+  "quCloseBook": "Вы уверены, что хотите закрыть эту книгу?",
+
+  "txtNoData": "нет данных",
+
+  "errBookOpen": "Не удалось открыть Книгу ({0}).",
+  "errBookPageFormat": "Неверный формат или структура страницы книги ({0}).",
+  "errBookStringsLoad": "Ошибка загрузки строкового ресурса Книги. (Книга:{0} | Язык:{1})",
+  "errLibStringsLoad": "Ошибка загрузки строкового ресурса Библиотеки. (Библиотека:{0} | Язык:{1})",
+  "errStringsLoad": "Ошибка загрузки файла ресурса локализованных строк | {0}",
+
+  "errInvalidTemplRef": "Неверный внутренний путь для LibraryItem шаблона ({0}).",
+  "errTemplateNotFound": "Шаблон не найден. ({0})",
+  "errTemplateNotFetched": "Не удалось получить шаблон. ({0})",
+  "errTemplateWrong": "Шаблон не является корректным. ({0})",
+  "errGetCtrInitData": "Не удалось получить данные для инициализации Контрола.",
+  "errCatalogParse": "Не удалось выполнить парсинг Каталога.",
+  "errCatalogFormat": "Некорректный формат Каталога ({0}).",
+  "errInvalidLibRef": "Некорректная ссылка на программную библиотеку."
+}

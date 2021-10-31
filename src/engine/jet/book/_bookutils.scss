@@ -1,0 +1,282 @@
+@import "./../../_shared/base";
+
+/*============================================================
+	z-index
+-------------------------------------------------------------*/
+
+.bk-z-above {
+  z-index: $app-z-above;
+}
+
+.bk-z-upper {
+  z-index: $app-z-upper;
+}
+
+.bk-z-high {
+  z-index: $app-z-high;
+}
+
+.bk-z-cover {
+  z-index: $app-z-cover;
+}
+
+/*============================================================
+	  Tool Buttons
+  -------------------------------------------------------------*/
+
+.tool-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1;
+  min-width: 2.2rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.tool-btn-l {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  min-width: 2.2rem;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@include media-breakpoint-up(sm) {
+  .tool-btn {
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+  }
+
+  .tool-btn-l {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+  }
+}
+
+/*============================================================
+	  UI Elements
+  -------------------------------------------------------------*/
+
+.ui-disabled {
+  pointer-events: none;
+  filter: none;
+  opacity: 0.5;
+}
+
+/*============================================================
+		Text Decoration
+	-------------------------------------------------------------*/
+
+.bk-text-ellipse {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.bk-2ch-n {
+  width: 2em;
+  min-width: 2em;
+  height: 2em;
+  min-height: 2em;
+}
+
+.bk-2ch-s {
+  width: 1.8em;
+  min-width: 1.8em;
+  height: 1.8em;
+  min-height: 1.8em;
+}
+
+.bk-2ch-l {
+  width: 2.2em;
+  min-width: 2.2em;
+  height: 2.2em;
+  min-height: 2.2em;
+}
+
+/*============================================================
+	  Increase/Decrease Font Size Utilities
+  -------------------------------------------------------------*/
+
+$enable-responsive-font-sizes: true;
+
+.bk-h1,
+.bk-h2,
+.bk-h3,
+.bk-h4,
+.bk-h5,
+.bk-h6 {
+  margin-bottom: $headings-margin-bottom;
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+.bk-h1 {
+  @include rfs($h1-font-size);
+}
+
+.bk-h2 {
+  @include rfs($h2-font-size);
+}
+
+.bk-h3 {
+  @include rfs($h3-font-size);
+}
+
+.bk-h4 {
+  @include rfs($h4-font-size);
+}
+
+.bk-h5 {
+  @include rfs($h5-font-size);
+}
+
+.bk-h6 {
+  @include rfs($h6-font-size);
+}
+
+.bk-text {
+  & p,
+  li {
+    font-size: $font-size-base;
+  }
+
+  & .bk-h1 {
+    font-size: $h1-font-size;
+  }
+  & .bk-h2 {
+    font-size: $h2-font-size;
+  }
+  & .bk-h3 {
+    font-size: $h3-font-size;
+  }
+  & .bk-h4 {
+    font-size: $h4-font-size;
+  }
+  & .bk-h5 {
+    font-size: $h5-font-size;
+  }
+  & .bk-h6 {
+    font-size: $h6-font-size;
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .bk-text {
+    & p,
+    li {
+      font-size: $font-size-base * 1.1;
+    }
+
+    & .bk-h1 {
+      font-size: $h1-font-size * 1.1;
+    }
+    & .bk-h2 {
+      font-size: $h2-font-size * 1.1;
+    }
+    & .bk-h3 {
+      font-size: $h3-font-size * 1.1;
+    }
+    & .bk-h4 {
+      font-size: $h4-font-size * 1.1;
+    }
+    & .bk-h5 {
+      font-size: $h5-font-size * 1.1;
+    }
+    & .bk-h6 {
+      font-size: $h6-font-size * 1.1;
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .bk-text {
+    & p,
+    li {
+      font-size: $font-size-base * 1.2;
+    }
+
+    & .bk-h1 {
+      font-size: $h1-font-size * 1.2;
+    }
+    & .bk-h2 {
+      font-size: $h2-font-size * 1.2;
+    }
+    & .bk-h3 {
+      font-size: $h3-font-size * 1.2;
+    }
+    & .bk-h4 {
+      font-size: $h4-font-size * 1.2;
+    }
+    & .bk-h5 {
+      font-size: $h5-font-size * 1.2;
+    }
+    & .bk-h6 {
+      font-size: $h6-font-size * 1.2;
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .bk-text {
+    & p,
+    li {
+      font-size: $font-size-base * 1.3;
+    }
+
+    & .bk-h1 {
+      font-size: $h1-font-size * 1.3;
+    }
+    & .bk-h2 {
+      font-size: $h2-font-size * 1.3;
+    }
+    & .bk-h3 {
+      font-size: $h3-font-size * 1.3;
+    }
+    & .bk-h4 {
+      font-size: $h4-font-size * 1.3;
+    }
+    & .bk-h5 {
+      font-size: $h5-font-size * 1.3;
+    }
+    & .bk-h6 {
+      font-size: $h6-font-size * 1.3;
+    }
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  .bk-text {
+    & p,
+    li {
+      font-size: $font-size-base * 1.4;
+    }
+
+    & .bk-h1 {
+      font-size: $h1-font-size * 1.4;
+    }
+    & .bk-h2 {
+      font-size: $h2-font-size * 1.4;
+    }
+    & .bk-h3 {
+      font-size: $h3-font-size * 1.4;
+    }
+    & .bk-h4 {
+      font-size: $h4-font-size * 1.4;
+    }
+    & .bk-h5 {
+      font-size: $h5-font-size * 1.4;
+    }
+    & .bk-h6 {
+      font-size: $h6-font-size * 1.4;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# Local History for Visual Studio Code
+.history/
+
+# Solution
+node_modules/
+app/
+code/
+
+# Books
+_storage/books/
+_storage/catalog/

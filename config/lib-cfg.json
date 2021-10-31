@@ -1,0 +1,121 @@
+{
+  "system": [
+    {
+      "name": "engine",
+      "langs": "en,ru"
+    },
+    {
+      "name": "shell",
+      "langs": "en,ru"
+    }
+  ],
+
+  "extension": [
+    {
+      "name": "_essentials",
+      "stylepath": "/essentials.css",
+      "langs": "en,ru",
+      "controls": [
+        {
+          "name": "CloseButton",
+          "module": "/button/closebtn/closebtn.js",
+          "templpath": "/templates/closebtn.html",
+          "startpoint": "BeforeSync"
+        },
+        {
+          "name": "InnerFolder",
+          "module": "/container/folder/innerfolder.js",
+          "templpath": "/templates/folder.html?Folder",
+          "startpoint": "BeforeSync"
+        },
+        {
+          "name": "LazyFolder",
+          "module": "/container/folder/lazyfolder.js",
+          "templpath": "/templates/folder.html?Folder",
+          "startpoint": "BeforeSync"
+        },
+        {
+          "name": "PromptOnce",
+          "module": "/service/promptonce/promptonce.js",
+          "templpath": "/templates/promptonce.html",
+          "startpoint": "AfterAsync"
+        },
+        {
+          "name": "MultilangArea",
+          "module": "/service/multilangarea/multilangarea.js",
+          "templpath": "/templates/multilangarea.html",
+          "startpoint": "BeforeSync"
+        },
+        {
+          "name": "RibbonGallery",
+          "module": "/gallary/ribbongallery/ribbongallery.js",
+          "templpath": "/templates/ribbongallery.html",
+          "startpoint": "AfterAsync"
+        }
+      ]
+    },
+    {
+      "name": "bookstuff",
+      "stylepath": "/bookstuff.css",
+      "langs": "en,ru",
+      "controls": [
+        {
+          "name": "ResourceLink",
+          "module": "/presn/reslink/reslink.js",
+          "templpath": "/templates/reslink.html",
+		  "stylepath": "./reslink.css",
+          "startpoint": "BeforeSync"
+        },
+        {
+          "name": "Audioplayer",
+          "module": "/media/player/audioplayer.js",
+          "templpath": "/templates/audioplayer.html",
+		  "stylepath": "./audioplayer.css",
+          "startpoint": "BeforeAsync"
+        },
+        {
+          "name": "Videoplayer",
+          "module": "/media/player/videoplayer.js",
+          "templpath": "/templates/videoplayer.html",
+		  "stylepath": "./videoplayer.css",
+          "startpoint": "BeforeAsync"
+        },
+        {
+          "name": "MathBox",
+          "module": "/presn/mathbox/mathbox.js",
+          "templpath": "/templates/mathbox.html",
+		  "stylepath": "./mathbox.css",
+          "startpoint": "BeforeAsync"
+        },
+        {
+          "name": "H5PPlayer",
+          "module": "/task/h5p/h5pplayer.js",
+          "templpath": "/templates/h5pplayer.html",
+		  "stylepath": "./h5pplayer.css",
+          "startpoint": "BeforeAsync"
+        }
+      ]
+    },
+    {
+      "name": "office",
+      "stylepath": "/office.css",
+      "langs": "en,ru",
+      "controls": [
+        {
+          "name": "PersonCardList",
+          "module": "/personcards/personcardlist.js",
+          "templpath": "/templates/personcardlist.html",
+          "stylepath": "./personcardlist.css",
+          "startpoint": "AfterAsync"
+        },
+        {
+          "name": "AnncBoard",
+          "module": "/anncboard/anncboard.js",
+          "templpath": "/templates/anncboard.html",
+          "stylepath": "./anncboard.css",
+          "startpoint": "AfterAsync"
+        }
+      ]
+    }
+  ]
+}

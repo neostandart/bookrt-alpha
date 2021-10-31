@@ -1,0 +1,29 @@
+<template id="BookRecord">
+	<li class="bookrecord list-group-item border-info py-3">
+		<form>
+			<div class="d-flex flex-column flex-md-row align-items-md-center main-panel">
+				<img id="bookbanner" class="align-self-center">
+				<div class="d-flex ms-md-3 mt-2 mt-md-0">
+					<div id="statesign"></div>
+
+					<div class="ms-3 bookname-box">
+						<div id="stateinfo" class="px-2">This book is opened here and in another window</div>
+						<div id="bookname" class="bk-h3"></div>
+						<button id="open" class="btn btn-primary mt-1" data-str="txtOpenBtn"></button>
+					</div>
+				</div>
+			</div>
+			<div class="bookdescr-panel mt-2">
+				<label for="bookdescr" class="form-label h6" data-str="capDescription"></label>
+				<div id="bookdescr" class="form-control"></div>
+			</div>
+		</form>
+	</li>
+</template>
+
+<template id="BookPickerDlg">
+	<div id="caption" data-str="BookPickerDlg_caption"></div>
+	<div id="content">
+		<ul id="booklist" class="list-group"></ul>
+	</div>
+</template>

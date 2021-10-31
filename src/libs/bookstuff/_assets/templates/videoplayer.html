@@ -1,0 +1,55 @@
+<!-- ======================================================== -->
+<!-- Videoplayer -->
+<!-- ======================================================== -->
+
+<template id="Videoplayer">
+	<div id="workarea" class="bg-dark text-white">
+		<div id="videopanel">
+			<video>
+				Your browser does not support the video tag.
+			</video>
+		</div><!-- END videopanel -->
+
+		<div id="controlpanel">
+			<!-- Bar Top -->
+			<div id="bar-top">
+				<div id="timecurrent" class="text-monospace mx-2">00:00</div>
+
+				<div id="progressbar">
+					<div id="barloaded"></div>
+					<div id="barplayed"></div>
+					<div id="sensor" class="w-100" style="height: 100%; opacity: 0;"></div>
+				</div>
+
+				<div id="timeduration" class="text-monospace mx-2">00:00</div>
+			</div><!-- END bar-top -->
+
+			<!-- Bar Bottom -->
+			<div id="bar-bottom">
+				<div id="stateinfo" class="fsym fsym-repeat"></div>
+				<div id="mainpanel">
+					<button id="stop_btn" class="btn btn-light text-primary tool-btn-l"><i class="fsym"></i></button>
+					<button id="play_btn" class="btn btn-light text-primary tool-btn-l"><i class="fsym"></i></button>
+					<button id="loop_btn" class="btn btn-light text-primary tool-btn-l"><i class="fsym"></i></button>
+				</div>
+
+				<div id="rightpanel">
+					<button id="fullscreen_btn" class="btn btn-light text-primary tool-btn-l"><i class="fsym fsym-enlarge"></i></button>
+					<button id="volume_btn" class="btn btn-light text-primary ms-2 tool-btn-l"><i class="fsym"></i></button>
+				</div>
+			
+			</div><!-- END bar-bottom -->
+		</div><!-- END controlpanel -->
+
+		<!-- Volume Adjust -->
+		<div id="volumeadjust" class="bg-dark">
+			<button id="mute_btn" class="btn-light text-danger me-2">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+					<path
+						d="m 1.2937236,1.2937236 a 0.99978214,0.99978214 0 0 1 1.4156915,0 L 8.0002618,6.5865702 13.291109,1.2937236 a 1.0010452,1.0010452 0 0 1 1.415692,1.4156915 L 9.4139538,8.0002621 14.706801,13.291109 A 1.0010451,1.0010451 0 0 1 13.291109,14.7068 L 8.0002618,9.4139541 2.7094151,14.7068 A 1.0010451,1.0010451 0 0 1 1.2937236,13.291109 L 6.5865698,8.0002621 1.2937236,2.7094151 a 0.99978214,0.99978214 0 0 1 0,-1.4156915 z" />
+				</svg>
+			</button>
+			<input id="volumevalue" type="range" class="custom-range" min="0" max="100">
+		</div>
+	</div>
+</template>

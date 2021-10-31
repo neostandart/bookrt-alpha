@@ -1,0 +1,41 @@
+<!-- ======================================================== -->
+<!-- PersonCardList -->
+<!-- ======================================================== -->
+
+<template id="PersonCard">
+	<template id="PropRecord">
+		<div class="row proprow">
+			<h6 id="Header" class="col-12 col-md-4 mb-0"></h6>
+			<div id="Data" class="col-12 col-md-8 mb-0"></div>
+		</div>
+	</template>
+
+	<div id="workarea" class="card mb-3 text-white fav-bg-dark person-card">
+		<div class="card-header">
+			<div class="header-data">
+				<div id="collapsepointer" class="btn text-white fsym fsym-chevron-right" data-bs-toggle="collapse" data-bs-target=""></div>
+				<img id="image" class="mb-2" alt="" data-bs-toggle="collapse" data-bs-target="">
+				<div id="fullname" class="mt-0 bk-h5"></div>
+				<div id="maindata" class="text-white props-part"></div>
+			</div>
+		</div>
+		<div class="collapse" data-bs-parent="">
+			<div class="card-body p-1">
+				<div id="extradata" class=" p-2 p-md-3 fav-bg-lightest fav-text-dark">
+				</div>
+				<div class="text-center">
+					<div id="collapse_btn" class="btn text-white mt-2 px-3 py-0" data-bs-toggle="collapse" data-bs-target="">
+						<span class="fsym fsym-collapse-up h4"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template id="PersonCardList">
+	<div id="workarea"></div>
+</template>
+<!-- END PersonCardList -->
+

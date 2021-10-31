@@ -1,0 +1,59 @@
+.app-mainview {
+  & .modalframe {
+    // BGN .dialogbox
+    & .dialogbox {
+      // BGN .bookpickerdlg
+      &.bookpickerdlg {
+        // min-width: 500px; // Так можно сделать доп. настройки для диалогов приложения
+        & .bookrecord {
+          border-bottom-width: 0.5rem;
+          border-bottom-style: solid;
+          & .main-panel {
+            & #bookbanner {
+              width: 250px;
+              @include media-breakpoint-up(md) {
+                width: 300px;
+              }
+            }
+
+            & #statesign {
+              font-family: "symbols" !important;
+              font-size: 2.5rem;
+              line-height: initial;
+
+              &.icon-closed::before {
+                content: "\f001";
+              }
+              &.icon-opened::before {
+                content: "\f212";
+              }
+            }
+
+            & #stateinfo {
+              display: inline-block;
+              background-color: $fav-lightest;
+              color: $fav-darkest;
+              border-radius: 8px;
+            }
+
+            & #statesign,
+            #bookname {
+              color: $fav-darker;
+            }
+          }
+        }
+      } // END .bookpickerdlg
+
+      // BGN appsettingsdlg
+      &.appsettingsdlg {
+		min-height: 400px;
+
+        & .settings-item {
+          border: 1px solid $info;
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          margin-top: 0.5rem;
+        }
+      } // END appsettingsdlg
+    } // END .dialogbox
+  }
+}

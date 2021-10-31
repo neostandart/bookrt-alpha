@@ -1,0 +1,52 @@
+<template id="GoBackBtn">
+	<button type="button" class="btn btn-primary btn-lg tool-bg-attract fsym fsym-chevron-left" data-attract="arrow" data-attract-side="right"></button>
+</template>
+
+<template id="AppMenuBtn">
+	<button class="btn btn-outline-primary" type="button">
+		<span class="fsym fsym-navbar"></span>
+	</button>
+</template>
+
+<template id="AppMenu">
+	<ul class="bg-light text-primary p-2 menuitems" style="list-style-type: none;">
+		<li id="fullscreen" class="btn btn-light text-primary menuitem">
+			<div>
+				<i class="image enlargeviewelem bi bi-arrows-fullscreen fs-3"></i>
+				<i class="image shrinkviewelem bi bi-arrows-angle-contract fs-3"></i>
+			</div>
+			<div>
+				<span class="enlargeviewelem" data-str="menuFullScreen"></span>
+				<span class="shrinkviewelem" data-str="menuRestoreSize"></span>
+			</div>
+		</li>
+
+		<li class="separator bg-primary"></li>
+
+		<li id="bookpicker" class="btn btn-light text-primary menuitem">
+			<i class="image fsym fsym-books fs-2"></i>
+			<span data-str="menuCatalog"></span>
+		</li>
+		
+		<li class="separator bg-primary"></li>
+
+		<li id="briefinfo" class="btn btn-light text-primary menuitem">
+			<i class="image bi bi-info-circle fs-2"></i>
+			<span data-str="menuBriefOverview"></span>
+		</li>
+
+		<li class="separator bg-primary"></li>
+
+		<li id="settings" class="btn btn-light text-primary menuitem">
+			<i class="image bi bi-gear fs-2"></i>
+			<span data-str="menuAppSettings"></span>
+		</li>
+
+		<li class="separator bg-primary"></li>
+
+		<li id="bookclose" class="btn btn-light text-danger menuitem">
+			<i class="image fsym fsym-book-closed fs-2"></i>
+			<span data-str="menuAppBookClose"></span>
+		</li>
+	</ul>
+</template>

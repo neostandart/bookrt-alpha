@@ -1,0 +1,336 @@
+@import "../_shared/theme";
+//
+
+/*============================================================
+	Book Navigation Control
+-------------------------------------------------------------*/
+
+// Усиление рамки фокуса кнопки (nav-unit).
+// $component-active-bg - это фактически primary color.
+// Bootstrap использует "rgba($component-active-bg, .25)"
+$unit-btn-focus-color: rgba($component-active-bg, 0.5);
+$unit-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width $unit-btn-focus-color;
+
+$folder-btn-focus-color: rgba($component-active-bg, 0.5);
+$folder-btn-focus-box-shadow: 0 0 0 $input-btn-focus-width
+  $folder-btn-focus-color;
+
+$page-indicator-width: 3px;
+$page-indicator-color: $orange;
+//
+
+.bk-booknav {
+  box-sizing: border-box !important;
+
+  & .nav-unit {
+    margin-top: map-get($spacers, 3);
+    margin-bottom: map-get($spacers, 3);
+    border: 3px $card-border-color solid;
+
+    &.opened {
+      border-color: $unit-btn-focus-color;
+    }
+
+    & .card-header {
+      padding: 0;
+
+      & #contenttoggle {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+
+        &:focus,
+        &.focus {
+          outline: 0;
+          box-shadow: $unit-btn-focus-box-shadow;
+        }
+
+        & #label {
+          margin-left: 0;
+        }
+      }
+    } // END .card-header
+  } // END .nav-unit
+
+  & .nav-folder {
+    margin-top: map-get($spacers, 3);
+    margin-bottom: map-get($spacers, 3);
+    border: 3px $card-border-color solid;
+
+    &.opened {
+      border-color: $unit-btn-focus-color;
+    }
+
+    & .card-header {
+      padding: 0;
+
+      & #contenttoggle {
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        width: 100%;
+
+        &:focus,
+        &.focus {
+          outline: 0;
+          box-shadow: $folder-btn-focus-box-shadow;
+        }
+
+        & #label {
+          margin-left: 0;
+        }
+      }
+    } // END .card-header
+
+    & .card-body {
+      padding-top: 0.25rem;
+      padding-bottom: 0.25rem;
+    }
+  } // END .nav-folder
+
+  & .nav-singlepage {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: map-get($spacers, 2);
+    margin-bottom: map-get($spacers, 2);
+    background-color: $nav-sitepage-bg;
+    color: $nav-sitepage-text;
+    border-bottom: $page-indicator-width solid transparent;
+
+    & #image {
+      width: 48px;
+      min-width: 48px;
+      height: 48px;
+      min-height: 48px;
+      background-color: $nav-sitepage-fg;
+    }
+
+    & #label {
+      margin-left: map-get($spacers, 2);
+      line-height: 1;
+      text-align: left;
+    }
+  } // END nav-singlepage
+
+  & .nav-innerbook {
+    border: 3px $card-border-color solid;
+    background-color: $nav-innerbook-bg;
+    margin-top: map-get($spacers, 3);
+    margin-bottom: map-get($spacers, 3);
+
+    & .card-header {
+      padding: 0;
+
+      & #contenttoggle {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        min-height: 64px;
+        padding-top: map-get($spacers, 1);
+        padding-bottom: map-get($spacers, 1);
+        padding-left: 0;
+        width: 100%;
+        color: white;
+
+        & #imageframe {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 64px;
+          min-width: 64px;
+          height: 64px;
+          min-height: 64px;
+          border-radius: 50%;
+          border: 2px solid $nav-innerpage-fg;
+          background-color: $nav-innerpage-bg;
+          position: relative;
+          overflow: hidden;
+          margin-top: -24px;
+          margin-left: -16px;
+
+          & img {
+            width: 40px;
+            min-width: 40px;
+            height: 40px;
+            min-height: 40px;
+            mask-size: 40px 40px;
+            background-color: $nav-innerpage-fg;
+          }
+        }
+
+        & #label {
+          margin-left: map-get($spacers, 2);
+        }
+      } // END #ContentToggle
+    } // END .card-header
+
+    & .card-body {
+      padding-top: map-get($spacers, 1);
+      padding-bottom: map-get($spacers, 1);
+
+      & #partinfo {
+        border: white 1px solid;
+        border-radius: 8px;
+        margin-top: map-get($spacers, 2);
+        margin-bottom: map-get($spacers, 3);
+        padding: map-get($spacers, 2);
+        color: white;
+        // display: none;
+      }
+    } // END .card-body
+
+    // Expander Opened
+    &.opened {
+      border: 3px $unit-btn-focus-color solid;
+    }
+
+    // Opened / Closed Expander Images
+    & #imageframe img {
+      mask-image: url("./_assets/images/nav/book-closed.svg");
+    }
+    &.opened #imageframe img {
+      mask-image: url("./_assets/images/nav/book-opened.svg");
+    }
+
+    & .nav-innerpage {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      background-color: $nav-innerpage-bg;
+      color: $nav-innerpage-text;
+      margin-top: map-get($spacers, 2);
+      margin-bottom: map-get($spacers, 2);
+      border-bottom: $page-indicator-width solid transparent;
+      cursor: pointer;
+
+      & #label {
+        margin-left: map-get($spacers, 2);
+        line-height: 1;
+        text-align: left;
+      }
+
+      & #number {
+        align-self: center;
+        justify-self: flex-end;
+        border-radius: 50%;
+        border: 1px solid #403022;
+        width: 2rem;
+        min-width: 2rem;
+        height: 2rem;
+        min-width: 2rem;
+        font-size: 1.2rem;
+        line-height: 1.2rem;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: 0;
+        padding: 0;
+      }
+    } // END .nav-innerpage
+  } // END .nav-innerbook
+
+  & .latest {
+    border-bottom: $page-indicator-width solid $page-indicator-color !important;
+  }
+
+  & .penultimate {
+    border-bottom: $page-indicator-width dashed rgba($page-indicator-color, 0.8) !important;
+  }
+
+  & .nav-sep {
+    margin-top: map-get($spacers, 2);
+    background-color: $nav-sitepage-bg;
+  }
+}
+
+//
+// Responsive breakpoints
+//
+
+/* Correction for the smallest screens */
+@include media-breakpoint-down(xs) {
+  .bk-booknav {
+    & .nav-folder {
+      & .card-body {
+        padding-right: 0.25rem;
+      }
+    }
+    //
+    & .nav-innerbook {
+      & .card-header {
+        & #contenttoggle {
+          & #imageframe {
+            width: 50px;
+            min-width: 50px;
+            height: 50px;
+            min-height: 50px;
+            margin-top: -32px;
+            & img {
+              width: 32px;
+              min-width: 32px;
+              height: 32px;
+              min-height: 32px;
+              mask-size: 32px 32px;
+            }
+          }
+        }
+      }
+
+      & .card-body {
+        padding-left: 0.25rem;
+        padding-right: 0.25rem;
+      }
+
+      & .nav-innerpage {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        & #label {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+}
+
+@include media-breakpoint-up(md) {
+  .bk-booknav {
+    & .nav-unit {
+      & .card-header {
+        & #contenttoggle {
+          flex-direction: row;
+          align-items: center;
+          & #label {
+            margin-left: map-get($spacers, 3);
+          }
+        }
+      }
+    }
+
+    & .nav-singlepage {
+      & #label {
+        margin-left: map-get($spacers, 3);
+      }
+    }
+
+    & .nav-innerbook {
+      & .nav-innerpage {
+        & #label {
+          margin-left: map-get($spacers, 3);
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+}
+
+@include media-breakpoint-up(xl) {
+}

@@ -1,0 +1,27 @@
+{
+  "title": "Bk-Separator",
+  "description": "Customizable separator of elements arranged vertically (for BkColumn)",
+  "contentType": "Static content",
+  "machineName": "H5P.BkSeparator",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 0,
+  "author": "Grigory Cherkasov",
+  "license": "MIT",
+  "coreApi": { "majorVersion": 1, "minorVersion": 0 },
+  "preloadedCss": [{ "path": "css/library.css" }],
+  "preloadedJs": [{ "path": "js/library.js" }],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.ShowWhen",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.ColorSelector",
+      "majorVersion": 1,
+      "minorVersion": 2
+    }
+  ]
+}

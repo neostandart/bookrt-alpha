@@ -1,0 +1,86 @@
+<!-- ======================================================== -->
+<!-- PromptOnce -->
+<!-- ======================================================== -->
+
+<template id="PromptOnce">
+	<style>
+		[data-control="PromptOnce"] {
+			overflow: hidden;
+			left: auto !important;
+			top: 0.2rem !important;
+			right: 0.2rem !important;
+			bottom: auto !important;
+			max-width: 90%;
+			transform: translateX(100%);
+			opacity: 0;
+			transition: transform 0.5s, opacity 0.4s;
+		}
+
+		@media (min-width: 768px) {
+			[data-control="PromptOnce"] {
+				max-width: 70%;
+			}
+		}
+
+		@media (min-width: 992px) {
+			[data-control="PromptOnce"] {
+				max-width: 50%;
+			}
+		}
+
+		[data-control="PromptOnce"].actual {
+			display: block !important;
+		}
+
+		[data-control="PromptOnce"].opened {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+
+		[data-control="PromptOnce"] #workarea {
+			position: relative;
+			border-radius: 8px;
+			padding: 1rem;
+			background-color: rgba(255, 255, 255, 0.8);
+		}
+
+
+		[data-control="PromptOnce"] .prompt-close-btn {
+			position: absolute;
+			left: auto;
+			top: 0;
+			right: 0;
+			bottom: auto;
+			width: 42px;
+			height: 42px;
+			min-width: 42px;
+			min-height: 42px;
+			padding: 0;
+			border-radius: 50%;
+			font-size: 1rem;
+			z-index: 1;
+		}
+
+		[data-control="PromptOnce"] #content {
+			position: relative;
+			width: 100%;
+			height: auto;
+			max-height: 500px;
+			overflow-x: hidden;
+			overflow-y: auto;
+			padding: 1rem;
+			background-color: white;
+		}
+
+		[data-control="PromptOnce"] #content.promptonce-border {
+			border-width: 8px !important;
+			border-radius: 8px;
+		}
+	</style>
+
+	<div id="workarea">
+		<button id="close_btn" type="button" class="btn btn-info prompt-close-btn fsym fsym-cross-slim"></button>
+	</div>
+</template>
+<!-- END PromptOnce -->

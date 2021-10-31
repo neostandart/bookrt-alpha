@@ -1,0 +1,103 @@
+@import "../_shared/base";
+//
+
+[data-control="AnncBoard"] {
+  // BGN AnncBoardList
+  & [data-control="AnncBoardList"] {
+    &.archive #caption {
+      display: none;
+    }
+
+    & [data-control="AnncBoardItem"] {
+      margin-bottom: 1.25rem;
+
+      & .card-header {
+        cursor: pointer;
+        padding-left: 1.2rem;
+
+        & .header-data {
+          display: grid;
+          grid-template-columns: auto auto 1fr;
+          grid-template-rows: auto auto auto;
+
+          & #collapsepointer {
+            grid-row: 1 / span 2;
+            grid-column: 1;
+          }
+
+          & #author {
+            grid-row: 1;
+            grid-column: 2;
+          }
+
+          & #created {
+            grid-row: 1;
+            grid-column: 3;
+            text-align: right;
+          }
+
+          & #subject {
+            grid-row: 3;
+            grid-column: 1 / span 3;
+          }
+        } // END .header-data
+
+        & .typesign {
+          position: absolute;
+          top: -10px;
+          left: -10px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+
+          & #image {
+            width: 24px;
+            height: 24px;
+            visibility: hidden;
+          }
+        }
+      } // END .card-header
+
+      &.routine .card-header .typesign #image {
+        visibility: visible;
+        background-color: #17a2b8;
+        mask-size: 24px 24px;
+        mask-image: url("./_resource/images/routine.svg");
+      } // END AnncBoardItem.routine
+
+      &.advisory .card-header .typesign #image {
+        visibility: visible;
+        background-color: #fd7e14;
+        mask-size: 24px 24px;
+        mask-image: url("./_resource/images/advisory.svg");
+      } // END AnncBoardItem.advisory
+
+      &.emergency .card-header .typesign #image {
+        visibility: visible;
+        background-color: #dc3545;
+        mask-size: 24px 24px;
+        mask-image: url("./_resource/images/emergency.svg");
+      } // END AnncBoardItem.emergency
+
+      @media (min-width: 576px) {
+        & .header-data #subject {
+          grid-row: 2;
+          grid-column: 2 / span 2;
+        }
+      }
+    } // END AnncBoardItem
+  }
+  // END AnncBoardList
+
+  // BGN AnncBoardArchive
+  & [data-control="AnncBoardArchive"] {
+    & [data-control="LazyFolder"] {
+      margin-bottom: 1rem;
+    } // END LazyFolder
+  }
+  // END AnncBoardArchive
+}
+// END data-control="AnncBoard"

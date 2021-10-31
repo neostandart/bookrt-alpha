@@ -1,0 +1,29 @@
+@import "../../_shared/base";
+//
+
+[data-control="ResourceLink"] {
+	min-height: 4em;
+}
+
+[data-control="ResourceLink"] .ctr-workarea {
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-size: 1.1rem;
+	text-align: left;
+}
+
+[data-control="ResourceLink"] .ctr-workarea #image {
+	width: 48px;
+}
+
+
+@media (min-width: 768px) {
+	[data-control="ResourceLink"] .ctr-workarea {
+		font-size: 1.3rem;
+	}
+
+	[data-control="ResourceLink"] .ctr-workarea #image {
+		width: auto;
+	}
+}

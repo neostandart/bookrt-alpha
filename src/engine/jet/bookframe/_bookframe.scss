@@ -1,0 +1,217 @@
+@import "../../service/animation/animation";
+
+/*============================================================
+	Page Host / Book Page
+-------------------------------------------------------------*/
+.app-bookframe {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  .bk-pagehost {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    & > .trans-indicator {
+      display: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      cursor: wait;
+      display: block;
+      width: 80px;
+      height: 80px;
+      z-index: $app-z-upper;
+      opacity: 0;
+      transition: opacity 1s;
+
+      & > .trans-indicator-sign {
+        width: 100%;
+        height: 100%;
+        background-image: url(./_assets/images/tools/wait/wait-gray_80.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    & > .trans-indicator.display {
+      opacity: 1;
+    }
+
+    & .bk-page {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+
+      transform-style: preserve-3d;
+      transform-style: flat;
+      backface-visibility: hidden;
+      overflow: hidden;
+      visibility: hidden;
+      border: inherit;
+
+      display: flex;
+      flex-direction: column;
+
+      &.current {
+        visibility: visible;
+        z-index: $app-z-above;
+      }
+
+      & .page-header {
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+
+        & .clientarea {
+          display: grid;
+          grid-template-columns: 1fr auto;
+          grid-template-rows: auto auto;
+          padding: 0 0 map-get($spacers, 1) 0;
+
+          border-bottom-width: 2px;
+          border-bottom-style: solid;
+
+          & #caption {
+            grid-row: 1;
+            grid-column: 1;
+            overflow: hidden;
+            line-height: 1;
+            margin-right: map-get($spacers, 1);
+            padding-top: map-get($spacers, 1);
+            padding-bottom: map-get($spacers, 1);
+            border-bottom-width: 1px;
+            border-bottom-style: dotted;
+          }
+
+          & #path {
+            grid-row: 2;
+            grid-column: 1;
+            overflow-x: auto;
+            white-space: nowrap;
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+            font-size: $h5-font-size;
+            margin-right: map-get($spacers, 1);
+            margin-top: map-get($spacers, 1);
+          }
+
+          & #number {
+            grid-row: 1 / span 2;
+            grid-column: 2;
+            align-self: center;
+            border-radius: 50%;
+            width: 2rem;
+            height: 2rem;
+            font-size: 1.2rem;
+            line-height: 1.2rem;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: map-get($spacers, 1);
+            padding: 0;
+          }
+        }
+      } // END page-header
+
+      & .page-body {
+        position: relative;
+        flex: 1;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        border: inherit;
+
+        & .page-content {
+          overflow: hidden;
+
+          border-left-width: 1px;
+          border-left-style: dashed;
+          border-left-color: inherit;
+
+          border-right-width: 1px;
+          border-right-style: dashed;
+          border-right-color: inherit;
+
+          border-bottom-width: 1px;
+          border-bottom-style: dashed;
+          border-bottom-color: inherit;
+
+          padding-bottom: 1rem;
+          margin-bottom: 1rem;
+
+          & .page-title {
+            text-align: center;
+            margin-bottom: map-get($spacers, 3); // mt-3;
+            padding-top: map-get($spacers, 2);
+            padding-bottom: map-get($spacers, 2);
+            color: $secondary;
+            font-family: $headings-font-family;
+            font-weight: $headings-font-weight;
+            line-height: $headings-line-height;
+            font-size: $h2-font-size * 0.875;
+
+            @media (min-width: 768px) {
+              margin-bottom: map-get($spacers, 4); // mt-4;
+              font-size: $h2-font-size;
+            }
+          }
+        }
+      } // page-body
+
+      & .page-body.no-scroll {
+        overflow-y: hidden;
+
+        & .page-content {
+          height: 100%;
+          padding-bottom: 0;
+        }
+      } // page-body.no-scroll
+
+      // No padding for extra small screens
+      @media (max-width: 575.98px) {
+        &.page-xsmall .page-body .page-content {
+          padding-left: 0 !important;
+          padding-right: 0 !important;
+        }
+      }
+
+      & .page-sticky {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: fit-content;
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation: kf-opacity-in 0.7s;
+      }
+
+      &.page-error {
+        border: 3px solid red;
+        padding: 100px 1rem 1rem 1rem;
+        overflow-y: auto;
+        background-color: $death-screen-color;
+        color: white;
+      }
+    } // END bk-page
+  } // END bk-pagehost
+
+  // Временно для отладки
+  & .bk-videotutor {
+    width: 300px;
+    height: 300px;
+    border: 2px solid blue;
+
+    & #clientarea {
+      width: 100%;
+      height: 100%;
+    }
+  } // END bk-videotutor
+} // END app-bookframe

@@ -1,0 +1,101 @@
+@import "../_shared/base";
+//
+
+[data-control="PersonCard"] .card-header {
+	padding-bottom: 0;
+}
+
+[data-control="PersonCard"] .header-data {
+	display: grid;
+	grid-template-columns: auto auto 1fr;
+	grid-template-rows: auto auto;
+}
+
+[data-control="PersonCard"] .header-data #collapsepointer {
+	grid-row: 1;
+	grid-column: 1;
+	align-self: center;
+	margin-right: 1rem;
+	font-size: 2rem;
+	line-height: 2rem;
+}
+
+[data-control="PersonCard"] .header-data #image {
+	grid-row: 1;
+	grid-column: 2;
+	max-width: 150px;
+	max-height: 200px;
+	margin-right: 1rem;
+	cursor: pointer;
+}
+
+[data-control="PersonCard"] .header-data #fullname {
+	grid-row: 1;
+	grid-column: 3;
+	align-self: center;
+	margin-bottom: 0.75rem;
+}
+
+[data-control="PersonCard"] .header-data .props-part {
+	grid-row: 2;
+	grid-column: 1 / span 3;
+}
+
+[data-control="PersonCard"] .header-data .props-part .proprow {
+	padding-bottom: 0.5rem;
+	margin-bottom: 0.75rem;
+	line-height: 1.2;
+	border-bottom: 1px solid white;
+	overflow-y: auto;
+	max-height: 10rem;
+}
+
+
+@media (min-width: 576px) {
+	[data-control="PersonCard"] .header-data #image {
+		max-width: 180px;
+		max-height: 230px;
+	}
+}
+
+@media (min-width: 768px) {
+	[data-control="PersonCard"] .header-data #image {
+		max-width: 200px;
+		max-height: 250px;
+	}
+}
+
+@media (min-width: 992px) {
+	[data-control="PersonCard"] .header-data #image {
+		max-width: 250px;
+		max-height: 300px;
+		grid-row: 1 / span 2;
+	}
+
+	[data-control="PersonCard"] .header-data #collapsepointer {
+		grid-row: 1 / span 2;
+	}
+
+	[data-control="PersonCard"] .header-data .props-part {
+		grid-row: 2;
+		grid-column: 3;
+	}
+}
+
+@media (max-width: 575.98px) {
+	[data-control="PersonCard"] .card-header {
+		padding-left: 0.5rem;
+		padding-right: 0.5rem;
+	}
+}
+
+/* Correction for the smallest screens */
+@media (max-width: 575.98px) {
+	[data-control="PersonCard"] .header-data #collapsepointer {
+		margin-right: 0;
+	}
+
+	[data-control="PersonCard"] .header-data #image {
+		margin-right: 0.5rem;
+	}
+}

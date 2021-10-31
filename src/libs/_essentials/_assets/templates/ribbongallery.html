@@ -1,0 +1,235 @@
+<!-- ======================================================== -->
+<!-- Ribbon Gallery -->
+<!-- ======================================================== -->
+
+<template id="RibbonGallery">
+	<style>
+		[data-control="RibbonGallery"] {
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			height: 400px;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr auto;
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			overflow: hidden;
+			border-style: double;
+			border-width: 3px;
+			border-radius: 10px;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea .ribbon {
+			grid-row: 1;
+			grid-column: 1 / span 2;
+			position: relative;
+			overflow-y: hidden;
+			overflow-x: scroll;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea #backward {
+			grid-row: 2;
+			grid-column: 1;
+			display: none;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea #forward {
+			grid-row: 2;
+			grid-column: 2;
+			display: none;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea .ribbon #cartridge {
+			display: flex;
+			flex-direction: row;
+			align-items: stretch;
+			justify-content: flex-start;
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 100%;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea .ribbon #cartridge .image-frame {
+			position: relative;
+			overflow: hidden;
+			display: flex;
+			flex-direction: column;
+			align-items: stretch;
+			justify-content: stretch;
+			width: 320px;
+			min-width: 300px;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea .ribbon #cartridge .image-frame .image-nest {
+			position: relative;
+			overflow: hidden;
+			flex: 1;
+			text-align: center;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea .ribbon #cartridge .image-frame .image-nest #image {
+			max-width: 100%;
+			max-height: 100%;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea .ribbon #cartridge .image-frame .text-nest {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			overflow: hidden;
+			border-style: solid;
+			border-width: 3px;
+			border-radius: 10px;
+			margin-top: 0.5rem;
+			padding: 4px;
+			height: 6em;
+		}
+
+		[data-control="RibbonGallery"] .ctr-workarea .ribbon #cartridge .image-frame .text-nest #text {
+			overflow-y: auto;
+			width: 100%;
+			max-height: 100%;
+			line-height: normal;
+			text-align: justify;
+			font-size: 90%;
+			padding-left: 2px;
+			padding-right: 2px;
+		}
+
+		@media (min-width: 768px) {
+			[data-control="RibbonGallery"] {
+				height: 420px;
+			}
+
+			[data-control="RibbonGallery"] .ctr-workarea .ribbon #cartridge .image-frame {
+				width: 350px;
+				min-width: 350px;
+			}
+		}
+
+		/* ******************************** */
+		/* Modal */
+		/* ******************************** */
+
+		.modalframe .bk-imagemodalframe {
+			position: absolute;
+			left: 0;
+			top: 0;
+			overflow: hidden;
+			max-height: 100%;
+			max-width: 100%;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.modalframe .bk-imagemodalframe figure {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			max-height: 100%;
+			max-width: 100%;
+			margin: 0;
+		}
+
+		.modalframe .bk-imagemodalframe figure img {
+			border-width: 4px;
+			border-style: solid;
+			margin-bottom: 0;
+		}
+
+		.modalframe .bk-imagemodalframe figure figcaption {
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0.5em;
+			border-radius: 10px;
+			border-width: 4px;
+			border-style: solid;
+			min-height: 2.5em;
+		}
+
+		.modalframe .bk-imagemodalframe figure figcaption #text {
+			text-align: justify;
+			max-height: 200px;
+			overflow-y: auto;
+		}
+
+		.modalframe .bk-imagemodalframe #textpanel {
+
+			display: none;
+			width: 90%;
+		}
+
+		.modalframe .bk-imagemodalframe.hastext #textpanel {
+			display: initial;
+		}
+
+		.modalframe .bk-imagemodalframe.hastext img {
+			margin-bottom: 0.5rem;
+		}
+
+		.modalframe .bk-imagemodalframe.show img {
+			animation-name: kf-zoom-0to1;
+			animation-duration: 0.5s;
+		}
+
+		@media (min-width: 768px) {
+			.modalframe .bk-imagemodalframe figure figcaption {
+				max-width: 550px;
+			}
+		}
+
+		@media (min-width: 992px) {
+			.modalframe .bk-imagemodalframe figure figcaption {
+				max-width: 700px;
+			}
+		}
+	</style>
+
+	<template id="ImageModal">
+		<div class="bk-imagemodalframe">
+			<figure class="text-center">
+				<img id="image" class="figure-img img-fluid fav-br-middle" alt="pressue plot">
+				<div id="textpanel" class="mx-auto px-3">
+					<figcaption class="fav-br-middle fav-bg-lightest">
+						<div id="text"></div>
+					</figcaption>
+				</div>
+			</figure>
+		</div>
+	</template>
+
+	<template id="ImageFrame">
+		<div class="image-frame p-1 p-md-2">
+			<div class="image-nest">
+				<img id="image" />
+			</div>
+			<div class="text-nest fav-br-light fav-bg-lightest">
+				<div id="text"></div>
+			</div>
+		</div>
+	</template>
+
+	<div id="workarea" class="p-2 fav-br-middle fav-bg-light">
+		<div class="ribbon mb-1">
+			<div id="cartridge"></div>
+		</div>
+		<button id="backward" class="btn btn-primary mx-4"><span class="fsym fsym-chevron-left"></span></button>
+		<button id="forward" class="btn btn-primary mx-4"><span class="fsym fsym-chevron-right"></span></button>
+	</div>
+</template>
+<!-- END Ribbon Gallery -->
+

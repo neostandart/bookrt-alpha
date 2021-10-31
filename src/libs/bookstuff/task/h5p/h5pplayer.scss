@@ -1,0 +1,16 @@
+@import "../../_shared/base";
+//
+
+[data-control="H5PPlayer"] {
+  // Взято из third-party/h5p/standalone/styles/h5p.css
+  background: #fefefe;
+
+  &.h5pplayer-std {
+    padding: map-get($spacers, 2);
+    border: 2px solid darkred;
+
+    @include media-breakpoint-up(md) {
+      padding: map-get($spacers, 3);
+    }
+  }
+}

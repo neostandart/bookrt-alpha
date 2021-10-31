@@ -1,0 +1,29 @@
+<!-- ======================================================== -->
+<!-- MultilangArea -->
+<!-- ======================================================== -->
+
+<template id="MultilangArea">
+	<style>
+		[data-control="MultilangArea"] #toolbar {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			flex-wrap: wrap;
+			background-color: lightgray;
+			border-top: 1px solid gray;
+			padding: 0.25rem;
+		}
+	</style>
+
+	<div id="toolbar" class="mb-3">
+		<div class="d-flex align-items-center">
+			<div class="text-nowrap me-2" data-str="~MultilangArea_labSelector"></div>
+			<select id="lang_sel" class="form-select me-2">
+			</select>
+		</div>
+	</div>
+
+	<div id="workarea">
+	</div>
+</template>
+<!-- END PromptOnce -->

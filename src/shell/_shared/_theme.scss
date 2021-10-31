@@ -1,0 +1,52 @@
+@import "../../engine/_shared/base";
+
+// Возм. сокращения
+// act/pas = active/passive
+// ena/dis (en/ds) (e/d) enabled/disabled
+
+//
+//	System Colors
+//
+
+$sys-attract-br: #ff8c00;
+$sys-attract-text: #ff8c00;
+$sys-attract-fg: #ff8c00;
+$sys-attract-bg: #ffd8b3;
+$sys-attract-fill: #ff8c00;
+
+$sys-danger-br: darkred;
+$sys-danger-text: darkred;
+$sys-danger-fg: darkred;
+$sys-danger-bg: #e3b0a3;
+$sys-danger-fill: #a53b28;
+
+//
+//	Master Page Colors
+//
+
+$nav-sitepage-bg: #d7c5b4;
+$nav-sitepage-fg: #403022;
+$nav-sitepage-text: #403022;
+//
+$nav-innerbook-bg: #673ab7;
+$nav-innerpage-bg: #efebe9;
+$nav-innerpage-fg: #311b92;
+$nav-innerpage-text: #311b92;
+
+//
+//	Application Colors
+//
+
+$fav-base: #b23cfd;
+//
+$fav-light: #c56cfd;
+$fav-lighter: #d89dfe;
+$fav-lightest: #f3e1fe;
+
+$fav-dark: #8e02e8;
+$fav-darker: #5f019a;
+$fav-darkest: #2f004d;
+//
+//
+$bk-page-br: $fav-light;
+$bk-page-bg: #fff8e1;

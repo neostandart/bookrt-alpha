@@ -1,0 +1,14 @@
+.h5p-bkseparator {
+  position: relative;
+  overflow: hidden;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.h5p-bkseparator :first-child {
+  margin-top: 0;
+}
+.h5p-bkseparator :last-child {
+  margin-bottom: 0;
+}

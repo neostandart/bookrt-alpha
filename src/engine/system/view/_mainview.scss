@@ -1,0 +1,101 @@
+@use "sass:map";
+//
+@import "../../_shared/base";
+//
+
+.app-mainview {
+  & .modalframe {
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: $app-z-high;
+
+    & > #close {
+      position: absolute;
+      top: map-get($spacers, 1);
+      right: map-get($spacers, 1);
+      z-index: $app-z-upper;
+      visibility: visible;
+    }
+
+    & .popupmodal {
+      opacity: 0;
+      visibility: hidden;
+    }
+
+    & .popupmodal.show {
+      visibility: visible;
+      opacity: 1;
+      transition: opacity 0.3s;
+      animation-name: kf-zoom-8to10;
+      animation-duration: 0.3s;
+    }
+
+    & .dialogbox {
+      position: relative;
+      overflow: hidden;
+      max-width: 900px;
+      max-height: 90%;
+      height: auto;
+
+      & #header {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+      }
+
+      & #content_slot {
+        overflow-y: auto;
+      }
+
+	  & #footer {
+		  button {
+			  min-width: 80px;
+		  }
+	  }
+    } // END .dialogbox
+  } // END .modalframe
+
+  & .modalframe.opened {
+    display: flex;
+  }
+
+  & .errorbanner {
+    display: flex !important;
+    max-height: 500px;
+    padding: 15px;
+    background-color: $death-screen-color;
+
+    & .errorinfo {
+      border: 3px solid $sys-error-color;
+      background-color: lavender;
+      padding: 0.5rem;
+      overflow-x: hidden;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+
+      & .itemcaption {
+        margin-bottom: $headings-margin-bottom;
+        font-weight: $headings-font-weight;
+        font-size: $h6-font-size;
+        line-height: $headings-line-height;
+        color: $headings-color;
+      }
+
+      & .infoitem {
+        word-wrap: break-word;
+        &:not(:last-child) {
+          margin-bottom: 0.5rem;
+          border-bottom: $sys-error-color 1px solid;
+        }
+      }
+    }
+  } // .errorbanner
+} // END .app-mainview

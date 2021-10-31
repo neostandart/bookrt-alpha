@@ -1,0 +1,173 @@
+[
+  {
+    "name": "settingsImage",
+    "type": "group",
+    "label": "Image Settings",
+    "fields": [
+      {
+        "name": "file",
+        "type": "image",
+        "label": "Image",
+        "importance": "high",
+        "disableCopyright": true
+      },
+      {
+        "name": "alt",
+        "type": "text",
+        "label": "Alternative text",
+        "importance": "high",
+        "description": "Required. If the browser can't load the image this text will be displayed instead. Also used by \"text-to-speech\" readers."
+      },
+      {
+        "name": "autoWidth",
+        "type": "boolean",
+        "label": "Use automatic width for the image",
+        "importance": "high",
+        "description": "Use automatic width for the image (maximum width — 100%).",
+        "default": true
+      },
+      {
+        "label": "Width",
+        "name": "widthImage",
+        "type": "text",
+        "default": "100%",
+        "maxLength": 7,
+        "description": "Image width in HTML/CSS syntax",
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "autoWidth",
+              "equals": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "maxWidth",
+        "type": "text",
+        "label": "Maximum width",
+        "maxLength": 7,
+        "optional": true,
+        "description": "Maximum image width in HTML/CSS syntax"
+      },
+      {
+        "name": "maxHeight",
+        "type": "text",
+        "label": "Maximum height",
+        "maxLength": 7,
+        "optional": true,
+        "description": "Maximum image height in HTML/CSS syntax"
+      },
+      {
+        "name": "marginLeft",
+        "type": "text",
+        "label": "Margin left",
+        "maxLength": 5,
+        "optional": true,
+        "default": "auto",
+        "description": "Image margin left in HTML/CSS syntax"
+      },
+      {
+        "name": "marginRight",
+        "type": "text",
+        "label": "Margin right",
+        "maxLength": 5,
+        "optional": true,
+        "default": "auto",
+        "description": "Image margin right in HTML/CSS syntax"
+      }
+    ]
+  },
+
+  {
+    "name": "settingsText",
+    "type": "group",
+    "label": "Text Settings",
+    "fields": [
+      {
+        "name": "textHTML",
+        "type": "text",
+        "importance": "low",
+        "optional": true,
+        "label": "Formatted Text",
+        "placeholder": "Text for the image",
+        "description": "Displaying text at the top or bottom of the image",
+        "widget": "html",
+        "tags": [
+          "strong",
+          "em",
+          "u",
+          "a",
+          "ul",
+          "ol",
+          "h1",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "h6",
+          "hr",
+          "pre",
+          "code"
+        ],
+        "font": {
+          "size": true,
+          "color": true
+        }
+      },
+      {
+        "name": "textLocation",
+        "type": "select",
+        "label": "Text Location",
+        "description": "The text location relative to the image",
+        "optional": true,
+        "default": "below",
+        "options": [
+          {
+            "value": "above",
+            "label": "Above"
+          },
+          {
+            "value": "below",
+            "label": "Below"
+          }
+        ]
+      },
+      {
+        "name": "textDistance",
+        "type": "select",
+        "label": "Text Distance",
+        "description": "Distance between text and image (vertically) in conventional units",
+        "optional": true,
+        "default": 1,
+        "options": [
+          {
+            "value": 0,
+            "label": "0"
+          },
+          {
+            "value": 1,
+            "label": "1"
+          },
+          {
+            "value": 2,
+            "label": "2"
+          },
+          {
+            "value": 3,
+            "label": "3"
+          },
+          {
+            "value": 4,
+            "label": "4"
+          },
+          {
+            "value": 5,
+            "label": "5"
+          }
+        ]
+      }
+    ]
+  }
+]

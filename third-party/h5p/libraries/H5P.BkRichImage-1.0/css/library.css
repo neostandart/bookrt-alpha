@@ -1,0 +1,22 @@
+.h5p-bkrichimage {
+  position: relative;
+  display: grid;
+  grid-template-rows: auto auto;
+  /* --- */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.h5p-bkrichimage .part-image {
+	display: block;
+}
+
+/* For these purposes used the settingsText.textDistance property (semantics.json) */
+.h5p-bkrichimage .part-text :first-child {
+  margin-top: 0;
+}
+.h5p-bkrichimage .part-text :last-child {
+  margin-bottom: 0;
+}
+/**/

@@ -1,0 +1,101 @@
+@import "../../_shared/base";
+//
+
+[data-control="MathBox"] .math {
+  position: relative;
+  overflow: hidden;
+  background-color: #ede7f6;
+  text-align: center;
+}
+
+[data-control="MathBox"] .math #equationframe {
+  display: inline-flex;
+  align-items: flex-start;
+  overflow-x: auto;
+  overflow-y: hidden;
+  max-width: 100%;
+}
+
+[data-control="MathBox"] .math #equationframe #equation {
+  opacity: 0;
+  cursor: pointer;
+}
+
+[data-control="MathBox"] .math.actual {
+  background-color: initial;
+}
+
+[data-control="MathBox"] .math.actual #equationframe #equation {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
+/* Numbered */
+
+[data-control="MathBox"] .math.hasnumber {
+  display: flex;
+  justify-content: flex-start;
+}
+
+[data-control="MathBox"] .math.hasnumber #equationframe {
+  margin-left: auto;
+}
+
+[data-control="MathBox"] .math.hasnumber #number {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  margin-left: auto;
+  min-width: 2em;
+  padding-bottom: 0.12em;
+  align-self: center;
+  font-size: 1.2rem;
+}
+
+/* ******************************** */
+/* Modal */
+/* ******************************** */
+
+.modalframe .bk-equmodalwnd {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: fit-content;
+  height: fit-content;
+  max-width: 100%;
+  opacity: 0;
+}
+
+.modalframe .bk-equmodalwnd .card-header {
+  display: flex;
+}
+
+.modalframe .bk-equmodalwnd .card-header {
+  display: flex;
+  padding: 0.5rem;
+}
+
+.modalframe .bk-equmodalwnd .card-header #close_btn {
+  align-self: flex-start;
+}
+
+.modalframe .bk-equmodalwnd .card-header #dragzone {
+  width: 100%;
+  cursor: move;
+}
+
+.modalframe .bk-equmodalwnd .card-body {
+  padding: 0.5rem;
+}
+
+.modalframe .bk-equmodalwnd #equation {
+  overflow-x: auto;
+  font-size: 2rem;
+  color: black;
+  background-color: white;
+  padding: 1rem;
+}
+
+.modalframe .bk-equmodalwnd.no-title #title {
+  display: none;
+}

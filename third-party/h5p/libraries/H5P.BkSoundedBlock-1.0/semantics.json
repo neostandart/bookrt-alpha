@@ -1,0 +1,64 @@
+[
+  {
+    "name": "files",
+    "type": "audio",
+    "importance": "high",
+    "label": "Source audio file",
+    "disableCopyright": true
+  },
+  {
+    "name": "textField",
+    "type": "text",
+    "label": "Text Field",
+    "importance": "high",
+    "description": "Sounded text span.",
+    "widget": "html",
+    "tags": [
+      "strong",
+      "em",
+      "del",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "hr"
+    ],
+    "font": {
+      "color": true
+    }
+  },
+  {
+    "name": "fontSize",
+    "type": "text",
+    "label": "Font Size",
+    "description": "Font size in HTML units (CSS format)",
+    "optional": true,
+    "maxLength": 6
+  },
+  {
+    "name": "colorPlayButton",
+    "type": "text",
+    "label": "Play Button color",
+    "description": "Color of the play button image (in HTML format).",
+    "optional": true,
+    "default": "royalblue",
+    "widget": "colorSelector",
+    "spectrum": {
+      "showPalette": true
+    }
+  },
+  {
+    "name": "colorHighlight",
+    "type": "text",
+    "label": "Highlight color",
+    "description": "Background highlight color during playback (in HTML format).",
+    "optional": true,
+    "default": "lightpink",
+    "widget": "colorSelector",
+    "spectrum": {
+      "showPalette": true
+    }
+  }
+]

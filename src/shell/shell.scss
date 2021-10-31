@@ -1,0 +1,211 @@
+@import "./frame/appframe";
+//
+
+//
+// System Styles
+//
+
+// Attraction
+
+.sys-attract-br {
+  border-color: $sys-attract-br;
+}
+
+.sys-attract-text {
+  color: $sys-attract-text;
+}
+
+.sys-attract-fg {
+  color: $sys-attract-fg;
+}
+
+.sys-attract-bg {
+  background-color: $sys-attract-bg;
+}
+
+.sys-attract-fill {
+  background-color: $sys-attract-fill;
+}
+
+// Danger
+
+.sys-danger-br {
+  border-color: $sys-danger-br;
+}
+
+.sys-danger-text {
+  color: $sys-danger-text;
+}
+
+.sys-danger-fg {
+  color: $sys-danger-fg;
+}
+
+.sys-danger-bg {
+  background-color: $sys-danger-bg;
+}
+
+//
+
+.page-sticky {
+  background: linear-gradient(90deg, #fff8e1, #e1f5fe, #fff8e1);
+}
+
+//
+// Starting Spinner
+//
+
+.app-splash {
+  #image {
+    background-color: $fav-darker;
+  }
+  .spinner-dot::before {
+    background-color: $fav-darker;
+  }
+} // END .app-splash
+
+//
+// Application Styles
+//
+
+// Favorite Border
+
+.fav-br-light {
+  border-color: $fav-light;
+}
+
+.fav-br-lighter {
+  border-color: $fav-lighter;
+}
+
+.fav-br-lightest {
+  border-color: $fav-lightest;
+}
+
+.fav-br-middle {
+  border-color: $fav-base;
+}
+
+.fav-br-dark {
+  border-color: $fav-dark;
+}
+
+.fav-br-darker {
+  border-color: $fav-darker;
+}
+
+.fav-br-darkest {
+  border-color: $fav-darkest;
+}
+
+// Favorite Text
+
+.fav-text-light {
+  color: $fav-lightest;
+}
+
+.fav-text-dark {
+  color: $fav-darker;
+}
+
+// Favorite Foreground (pictograms, signs ...)
+
+.fav-fg-light {
+  color: $fav-light;
+}
+
+.fav-fg-lighter {
+  color: $fav-lighter;
+}
+
+.fav-fg-lightest {
+  color: $fav-lightest;
+}
+
+.fav-fg-middle {
+  border-color: $fav-base;
+}
+
+.fav-fg-dark {
+  color: $fav-dark;
+}
+
+.fav-fg-darker {
+  color: $fav-darker;
+}
+
+.fav-fg-darkest {
+  color: $fav-darkest;
+}
+
+// Favorite Background
+
+.fav-bg-light {
+  background-color: $fav-light;
+}
+
+.fav-bg-lightest {
+  background-color: $fav-lightest;
+}
+
+.fav-bg-lighter {
+  background-color: $fav-lighter;
+}
+
+.fav-bg-middle {
+  background-color: $fav-base;
+}
+
+.fav-bg-dark {
+  background-color: $fav-dark;
+}
+
+.fav-bg-darker {
+  background-color: $fav-darker;
+}
+
+.fav-bg-darkest {
+  background-color: $fav-darkest;
+}
+
+// Favorite Fill
+
+.fav-grad-lr-light {
+  background: linear-gradient(90deg, $fav-lighter, $fav-lightest, transparent);
+}
+
+.fav-grad-rl-light {
+  background: linear-gradient(90deg, transparent, $fav-lightest, $fav-lighter);
+}
+
+// Modal
+
+.modalframe {
+  background-color: rgba($fav-darker, 0.8);
+}
+
+.modalframe.bg-transparent {
+  background-color: transparent;
+}
+
+.modalframe.bg-white30 {
+  background-color: rgba(white, 0.3);
+}
+
+.modalframe.bg-white50 {
+  background-color: rgba(white, 0.5);
+}
+
+.modalframe.bg-white70 {
+  background-color: rgba(white, 0.7);
+}
+
+// Book Page
+
+.bk-page-bg {
+  background-color: $bk-page-bg;
+}
+
+.bk-page-br {
+  border-color: $bk-page-br;
+}

@@ -1,0 +1,18 @@
+{
+	"menuFullScreen": "Full Screen",
+	"menuRestoreSize": "Restore Original Size",
+	"menuCatalog": "The Catalog",
+	"menuBriefOverview": "Brief Overview",
+	"menuAppSettings": "Application Settings",
+	"menuAppBookClose": "Close this Book",
+
+	"BookPickerDlg_caption": "The Catalog",
+	"BookPickerDlg_bookclosed": "This book is closed",
+	"BookPickerDlg_bookopened": "This book is opened",
+	"BookPickerDlg_opened_here_another": "This book is opened here and in another window",
+	"BookPickerDlg_opened_another": "This book already opened in another window",
+
+	"AppSettingsDlg_caption": "Application Settings",
+	"AppSettingsDlg_needrestart": "To fully take effect of this setting, you must restart the program.",
+	"SettingLang_langlabel": "The current UI language"
+}

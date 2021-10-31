@@ -1,0 +1,94 @@
+@import "../../_shared/base";
+//
+
+//
+// Folder Colors
+//
+
+$bk-folder-br: #dfba76;
+$bk-folder-br-act: #d09b2e;
+$bk-folder-text: #785a21;
+$bk-folder-fg: #785a21;
+$bk-folder-bg: #ffffdd;
+$bk-folder-fill: #ffecb3;
+
+//
+// Folder Controls
+//
+
+.bk-folder {
+  overflow: hidden;
+  position: relative;
+
+  & > .card {
+    border: 3px solid $bk-folder-br;
+  }
+
+  & .folder-header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid $bk-folder-br;
+    cursor: pointer;
+    color: $bk-folder-text;
+    background-color: $bk-folder-fill;
+  }
+
+  & .folder-header > #pointer {
+    font-size: 1.5em;
+  }
+
+  & .folder-header > #caption {
+    margin-left: 1rem;
+  }
+
+  & .folder-body {
+    padding-top: 0.25rem;
+  }
+
+  & .folder-body > .folder-content {
+    min-height: 120px;
+  }
+
+  & > #contentkind {
+    position: absolute;
+    top: 0;
+    border-radius: 50%;
+    border: 3px solid $bk-folder-br;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $bk-folder-fg;
+    background-color: $bk-folder-fill;
+  }
+
+  &.hascontentkind {
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+
+  &.hascontentkind .folder-header > #pointer {
+    margin-left: 18px;
+  }
+
+  & .folder-footer > #collapse_btn {
+    color: $bk-folder-fg;
+  }
+
+  // Folder Opened State
+
+  &.opened > #contentkind {
+    border-color: $bk-folder-br-act;
+  }
+
+  &.opened > .card {
+    border-color: $bk-folder-br-act;
+  }
+
+  &.opened .folder-header {
+    border-color: $bk-folder-br-act;
+  }
+}

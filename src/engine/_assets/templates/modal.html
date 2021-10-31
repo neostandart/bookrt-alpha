@@ -1,0 +1,20 @@
+<template id="DialogBox">
+	<div class="card container p-0 popupmodal dialogbox">
+		<div id="header" class="card-header">
+			<div class="d-flex align-items-center flex-fill">
+				<i id="icon" class="fs-1 fsym"></i>
+				<h5 id="caption_slot" class="mx-2 mb-0"></h5>
+			</div>
+			<button id="close" type="button" class="btn-close" aria-label="Close"></button>
+		</div>
+		<div id="content_slot" class="card-body">
+		</div>
+		<div id="footer" class="card-footer mt-2 text-end">
+			<button id="save" type="button" class="btn btn-primary" data-str="txtSaveBtn"></button>
+			<button id="yes" type="button" class="btn btn-primary" data-str="txtYesBtn"></button>
+			<button id="no" type="button" class="btn btn-secondary ms-1" data-str="txtNoBtn"></button>
+			<button id="cancel" type="button" class="btn btn-secondary ms-1" data-str="txtCancelBtn"></button>
+			<button id="close" type="button" class="btn btn-secondary ms-1" data-str="txtCloseBtn"></button>
+		</div>
+	</div>
+</template>

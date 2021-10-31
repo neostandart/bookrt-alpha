@@ -1,0 +1,66 @@
+<!-- ======================================================== -->
+<!-- Announcement Board -->
+<!-- ======================================================== -->
+
+<template id="AnncBoardItem">
+	<div id="workarea" class="card text-dark border-info">
+		<div class="card-header" data-bs-toggle="collapse" data-bs-target="">
+			<div class="header-data">
+				<div id="collapsepointer" class="btn text-info pb-0 mb-auto"><span id="image" class="fsym fsym-chevron-right h3"></span></div>
+				<div id="author"></div>
+				<div id="created"></div>
+				<div id="subject" class="bk-h5"></div>
+			</div>
+			<div class="typesign border border-info bg-light">
+				<img id="image" alt="">
+			</div>
+		</div>
+		<div class="collapse" data-bs-parent="">
+			<div class="card-body text-dark p-1">
+				<div id="Text" class="p-2 p-md-3">
+				</div>
+				<div class="text-center">
+					<div id="collapse_btn" class="btn text-info mt-2 px-3 py-0" data-bs-toggle="collapse" data-bs-target="">
+						<span class="fsym fsym-collapse-up h4"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+
+<template id="AnncBoardList">
+	<div id="header">
+		<h4 id="caption" class="font-italic mb-3"></h4>
+		<div class="toolbar d-flex align-items-stretch justify-content-between flex-wrap mb-3">
+			<div class="d-flex align-items-center mb-2">
+				<div class="me-2" data-str="~AnncBoard_labSort"></div>
+				<select  id="sort_selector" class="form-select me-2">
+					<option value="Ascending" data-str="~AnncBoard_txtByAscending"></option>
+					<option value="Descending" data-str="~AnncBoard_txtByDescending" selected></option>
+				</select>
+			</div>
+			<button id="collapse_all" class="btn btn-secondary btn-lg mb-2 fsym fsym-collapse-up" data-bs-toggle="tooltip" data-str="title:ttCollapseAllElems"></button>
+		</div>
+	</div>
+
+	<div id="workarea">
+		<div id="items"></div>
+		<button id="go_top" class="btn btn-info btn-lg d-block ms-auto me-0 fsym fsym-go-top" data-bs-toggle="tooltip" data-str="title:ttGoStart"></button>
+	</div>
+</template>
+
+
+<template id="AnncBoardArchive">
+	<div id="workarea">
+		<h4 id="caption" class="font-italic mb-4"></h4>
+	</div>
+</template>
+
+
+<template id="AnncBoard">
+	<div id="workarea">
+	</div>
+</template>
+<!-- END Announcement Board -->

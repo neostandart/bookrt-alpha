@@ -1,0 +1,74 @@
+@import "../../_shared/base";
+//
+
+//
+// Attraction pointer (definition and animation)
+//
+.tool-pointer {
+  position: absolute;
+  display: block;
+  z-index: $app-z-cover;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in;
+  width: 32px;
+  height: 32px;
+}
+
+.tool-pointer.attracting {
+  visibility: visible;
+  opacity: 1;
+}
+
+// пока только аним. указатели слева, справа и сверху
+.tool-pointer.point-left {
+  animation-name: kf-left-pointer;
+  mask-size: 32px 32px;
+  mask-image: url("./_assets/images/attraction/arrow-fat-l.svg");
+}
+
+.tool-pointer.point-right {
+  animation-name: kf-right-pointer;
+  mask-size: 32px 32px;
+  mask-image: url("./_assets/images/attraction/arrow-fat-r.svg");
+}
+
+.tool-pointer.point-down {
+  animation-name: kf-down-pointer;
+  mask-size: 32px 32px;
+  mask-image: url("./_assets/images/attraction/arrow-fat-d.svg");
+}
+
+@keyframes kf-left-pointer {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(50%, 0);
+  }
+}
+
+@keyframes kf-right-pointer {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes kf-down-pointer {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(0, -50%);
+  }
+}

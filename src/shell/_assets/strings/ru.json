@@ -1,0 +1,18 @@
+{
+  "menuFullScreen": "Развернуть на весь экран",
+  "menuRestoreSize": "Вернуть в исходный размер",
+  "menuCatalog": "Каталог",
+  "menuBriefOverview": "Краткий обзор",
+  "menuAppSettings": "Настройки программы",
+  "menuAppBookClose": "Закрыть эту книгу",
+
+  "BookPickerDlg_caption": "Каталог",
+  "BookPickerDlg_bookclosed": "Книга закрыта",
+  "BookPickerDlg_bookopened": "Книга открыта",
+  "BookPickerDlg_opened_here_another": "Книга открыта здесь и в другом окне",
+  "BookPickerDlg_opened_another": "Книга открыта в другом окне",
+
+  "AppSettingsDlg_caption": "Настройки программы",
+  "AppSettingsDlg_needrestart": "Для полного вступления в силу данной настройки, вам необходимо перезапустить программу.",
+  "SettingLang_langlabel": "Текущий язык пользовательского интерфейса"
+}

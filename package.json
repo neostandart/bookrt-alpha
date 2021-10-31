@@ -1,0 +1,26 @@
+{
+  "name": "bookrt",
+  "version": "0.1.0",
+  "description": "The Textbooks Runtime System",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cherkasov Grigory",
+  "license": "MIT",
+  "dependencies": {
+    "@types/bootstrap": "^5.0.17",
+    "bootstrap": "^5.0.2",
+    "bootstrap-icons": "^1.5.0",
+    "jquery": "^3.6.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-newer": "^1.4.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "sass": "^1.35.2",
+    "typescript": "^4.4.3"
+  }
+}

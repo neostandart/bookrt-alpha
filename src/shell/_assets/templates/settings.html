@@ -1,0 +1,20 @@
+<template id="AppSettingsDlg">
+	<div id="caption" data-str="AppSettingsDlg_caption"></div>
+	<div id="content"></div>
+</template>
+
+
+<template id="SettingLang">
+	<div class="presenter container-fluid py-3">
+		<div class="d-flex align-items-center">
+			<p class="flex-fill my-0 me-3 lh-1 text-end" data-str="SettingLang_langlabel"></p>
+			<select id="langselect" class="form-select form-select-lg w-auto">
+			</select>
+		</div>
+
+		<div class="attention-panel mt-3">
+			<label for="attention" class="form-label h6 text-danger" data-str="capAttention@!"></label>
+			<div id="attention" class="form-control p-3" data-str="AppSettingsDlg_needrestart"></div>
+		</div>
+	</div>
+</template>

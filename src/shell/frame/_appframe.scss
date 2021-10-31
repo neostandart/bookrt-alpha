@@ -1,0 +1,163 @@
+@import "masternav";
+@import "./dialogs/dialogs";
+//
+
+/*============================================================
+	Application Frame
+-------------------------------------------------------------*/
+
+$backnavbtn-width: 3rem;
+$backnavbtn-height: 3rem;
+$backnavbtn-top: map-get($spacers, 1);
+$backnavbtn-left: map-get($spacers, 1);
+
+$appmenubtn-width: 2.5rem;
+$appmenubtn-top: map-get($spacers, 1);
+$appmenubtn-right: map-get($spacers, 1);
+
+.app-frame {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  // Main View
+  & .app-mainview {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &.nobook {
+      background-image: url(../../app/bg-image.png);
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    & #goback {
+      position: absolute;
+      overflow: visible;
+      width: fit-content;
+      height: fit-content;
+      left: $backnavbtn-left;
+      top: $backnavbtn-top;
+      z-index: $app-z-high;
+
+      & button {
+        border-radius: 50%;
+        font-size: 1rem;
+        line-height: 1rem;
+        width: $backnavbtn-width;
+        height: $backnavbtn-height;
+      }
+    }
+
+    & #appmenubtn {
+      position: absolute;
+      top: $appmenubtn-top;
+      right: $appmenubtn-right;
+      z-index: $app-z-high;
+      visibility: hidden;
+
+      & button {
+        padding: map-get($spacers, 1) 0;
+        width: $appmenubtn-width;
+        box-shadow: none;
+      }
+    }
+
+    & #appmenu {
+      position: absolute;
+      right: 0;
+      width: 300px;
+      max-height: 100%;
+
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(100%);
+
+      border-top: 1px solid $primary;
+      border-left: 1px solid $primary;
+      border-bottom: 1px solid $primary;
+      z-index: $app-z-high;
+
+      transition: opacity 0.5s, transform 0.5s;
+
+      &.opened {
+        opacity: 1;
+        transform: translateX(0);
+      }
+
+      & .menuitems {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        height: 100%;
+        margin: 0;
+
+        & .menuitem {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          margin-top: map-get($spacers, 2);
+          text-align: left;
+          line-height: 1;
+          font-weight: 500;
+
+          & .image {
+            margin-right: map-get($spacers, 3);
+          }
+        }
+
+        & .separator {
+          height: 1px;
+          margin-top: map-get($spacers, 2);
+        }
+
+        //
+        // The view states of the fullscreen toggle
+        //
+        & #fullscreen.enlargeview .enlargeviewelem {
+          display: initial;
+        }
+        & #fullscreen.enlargeview .shrinkviewelem {
+          display: none;
+        }
+        & #fullscreen.shrinkview .enlargeviewelem {
+          display: none;
+        }
+        & #fullscreen.shrinkview .shrinkviewelem {
+          display: initial;
+        }
+      }
+    }
+  } // END .app-mainview
+} // END .app-frame
+
+//
+// Utilities for adjusting page titles
+//
+
+:root {
+	--shell-space-left: #{$backnavbtn-left + $backnavbtn-width + map-get($spacers, 2)};
+	--shell-space-right: #{$appmenubtn-right + $appmenubtn-width + map-get($spacers, 1)};
+}
+
+.shell-padding-left {
+  padding-left: $backnavbtn-left + $backnavbtn-width + map-get($spacers, 2) !important;
+}
+
+.shell-margin-left {
+  margin-left: $backnavbtn-left + $backnavbtn-width + map-get($spacers, 2) !important;
+}
+
+.shell-padding-right {
+  padding-right: $appmenubtn-right + $appmenubtn-width + map-get($spacers, 1) !important;
+}
+
+.shell-margin-right {
+  margin-right: $appmenubtn-right + $appmenubtn-width + map-get($spacers, 1) !important;
+}

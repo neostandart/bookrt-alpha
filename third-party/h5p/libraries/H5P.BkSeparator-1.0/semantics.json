@@ -1,0 +1,68 @@
+[
+  {
+    "name": "height",
+    "type": "text",
+    "label": "Height",
+    "description": "Defines the height of the separator in HTML/CSS format (auto by default).",
+    "optional": true,
+    "default": "auto",
+    "maxLength": 7
+  },
+  {
+    "name": "useFill",
+    "type": "boolean",
+    "label": "Use fill of the separator",
+    "importance": "high",
+    "default": false
+  },
+  {
+    "name": "colorFill",
+    "type": "text",
+    "label": "Fill color",
+    "description": "Color fill of the separator (there is no fill by default).",
+    "optional": true,
+    "default": "Lavender",
+    "widget": "showWhen",
+    "showWhen": {
+      "rules": [
+        {
+          "field": "useFill",
+          "equals": true
+        }
+      ],
+      "widget": "colorSelector"
+    },
+    "spectrum": {
+      "showPalette": true
+    }
+  },
+  {
+    "name": "margin",
+    "type": "text",
+    "label": "Margin",
+    "description": "Defines the external indentation on all four sides of the separator in HTML/CSS format (0 by default).",
+    "optional": true,
+	"maxLength": 24
+  },
+  {
+    "name": "padding",
+    "type": "text",
+    "label": "Padding",
+    "description": "Defines the internal indentation on all four sides of the separator in HTML/CSS format (0 by default).",
+    "optional": true,
+	"maxLength": 24
+  },
+  {
+    "name": "textField",
+    "type": "text",
+    "label": "Text",
+    "importance": "low",
+    "optional": true,
+    "widget": "html",
+    "tags": ["strong", "em", "del", "h1", "h2", "h3", "h4", "h5", "h6", "hr"],
+    "font": {
+      "size": true,
+      "color": true
+    }
+  }
+]
