@@ -1,0 +1,17 @@
+{
+  "buildnum": "1",
+  "name": {
+    "ru": "Мобильный класс",
+    "en": "Mobile Class"
+  },
+  "settings": [
+    {
+      "name": "lang",
+      "value": "ru",
+      "data": {
+        "langlist": ["en", "ru"]
+      }
+    }
+  ],
+  "start": "book-01"
+}
