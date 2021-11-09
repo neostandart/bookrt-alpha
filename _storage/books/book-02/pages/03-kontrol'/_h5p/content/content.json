@@ -1,0 +1,742 @@
+{
+    "showCoverPage": false,
+    "bookCover": {
+        "coverDescription": ""
+    },
+    "chapters": [
+        {
+            "params": {
+                "content": [
+                    {
+                        "content": {
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ехать</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ездить</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ходят</div>\n"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>идут</div>\n"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": false,
+                                    "enableCheckButton": true,
+                                    "type": "single",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Проверить",
+                                    "showSolutionButton": "Показать решение",
+                                    "tryAgainButton": "Повторить",
+                                    "tipsLabel": "Показать подсказку",
+                                    "scoreBarLabel": "Вы получили :num из :total баллов",
+                                    "tipAvailable": "Подсказка доступна",
+                                    "feedbackAvailable": "Доступна обратная связь",
+                                    "readFeedback": "Прочитать отзыв",
+                                    "wrongAnswer": "Неправильный ответ",
+                                    "correctAnswer": "Правильный ответ",
+                                    "shouldCheck": "Должен был быть отмечен",
+                                    "shouldNotCheck": "Не должен был быть отмечен",
+                                    "noInput": "Пожалуйста, ответьте перед просмотром решения",
+                                    "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                    "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                    "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                                },
+                                "confirmCheck": {
+                                    "header": "Завершить ?",
+                                    "body": "Вы уверены, что хотите закончить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Завершить"
+                                },
+                                "confirmRetry": {
+                                    "header": "Повторить ?",
+                                    "body": "Вы уверены, что хотите повторить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Подтвердить"
+                                },
+                                "question": "<p>Сейчас дети […] в городской парк.</p>\n"
+                            },
+                            "library": "H5P.MultiChoice 1.14",
+                            "metadata": {
+                                "contentType": "Multiple Choice",
+                                "license": "U",
+                                "title": "Задание 01 (Multiple Choice)",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Задание 01 (Multiple Choice)",
+                                "defaultLanguage": "ru"
+                            },
+                            "subContentId": "3a295191-4aa8-45c7-abac-d37c9bcd87cf"
+                        },
+                        "useSeparator": "auto"
+                    },
+                    {
+                        "content": {
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>едут</div>\n"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>идёт</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ходят</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ехать</div>\n"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": true,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Проверить",
+                                    "showSolutionButton": "Показать решение",
+                                    "tryAgainButton": "Повторить",
+                                    "tipsLabel": "Показать подсказку",
+                                    "scoreBarLabel": "Вы получили :num из :total баллов",
+                                    "tipAvailable": "Подсказка доступна",
+                                    "feedbackAvailable": "Доступна обратная связь",
+                                    "readFeedback": "Прочитать отзыв",
+                                    "wrongAnswer": "Неправильный ответ",
+                                    "correctAnswer": "Правильный ответ",
+                                    "shouldCheck": "Должен был быть отмечен",
+                                    "shouldNotCheck": "Не должен был быть отмечен",
+                                    "noInput": "Пожалуйста, ответьте перед просмотром решения",
+                                    "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                    "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                    "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                                },
+                                "confirmCheck": {
+                                    "header": "Завершить ?",
+                                    "body": "Вы уверены, что хотите закончить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Завершить"
+                                },
+                                "confirmRetry": {
+                                    "header": "Повторить ?",
+                                    "body": "Вы уверены, что хотите повторить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Подтвердить"
+                                },
+                                "question": "<p>Мальчик сейчас […] в зоопарк.</p>\n"
+                            },
+                            "library": "H5P.MultiChoice 1.14",
+                            "metadata": {
+                                "contentType": "Multiple Choice",
+                                "license": "U",
+                                "title": "Задание 02 (Multiple Choice)",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Задание 02 (Multiple Choice)",
+                                "defaultLanguage": "ru"
+                            },
+                            "subContentId": "fde6c082-bf56-45a3-ad82-09fa3e878b9d"
+                        },
+                        "useSeparator": "auto"
+                    },
+                    {
+                        "content": {
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>идём</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>едут</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ходим</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ездим</div>\n"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": true,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Проверить",
+                                    "showSolutionButton": "Показать решение",
+                                    "tryAgainButton": "Повторить",
+                                    "tipsLabel": "Показать подсказку",
+                                    "scoreBarLabel": "Вы получили :num из :total баллов",
+                                    "tipAvailable": "Подсказка доступна",
+                                    "feedbackAvailable": "Доступна обратная связь",
+                                    "readFeedback": "Прочитать отзыв",
+                                    "wrongAnswer": "Неправильный ответ",
+                                    "correctAnswer": "Правильный ответ",
+                                    "shouldCheck": "Должен был быть отмечен",
+                                    "shouldNotCheck": "Не должен был быть отмечен",
+                                    "noInput": "Пожалуйста, ответьте перед просмотром решения",
+                                    "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                    "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                    "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                                },
+                                "confirmCheck": {
+                                    "header": "Завершить ?",
+                                    "body": "Вы уверены, что хотите закончить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Завершить"
+                                },
+                                "confirmRetry": {
+                                    "header": "Повторить ?",
+                                    "body": "Вы уверены, что хотите повторить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Подтвердить"
+                                },
+                                "question": "<p>Сейчас мы […] в цирк.</p>\n"
+                            },
+                            "library": "H5P.MultiChoice 1.14",
+                            "metadata": {
+                                "contentType": "Multiple Choice",
+                                "license": "U",
+                                "title": "Задание 03 (Multiple Choice)",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Задание 03 (Multiple Choice)",
+                                "defaultLanguage": "ru"
+                            },
+                            "subContentId": "6d6b38c4-1b18-49c2-926d-d00d524751d5"
+                        },
+                        "useSeparator": "auto"
+                    }
+                ]
+            },
+            "library": "H5P.Column 1.13",
+            "subContentId": "8fbe57e2-9db1-4407-9655-2ef47333a499",
+            "metadata": {
+                "contentType": "Column",
+                "license": "U",
+                "title": "идти/ходить",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "идти/ходить",
+                "defaultLanguage": "ru"
+            }
+        },
+        {
+            "params": {
+                "content": [
+                    {
+                        "content": {
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>еду</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>иду</div>\n"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>езжу</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>хожу</div>\n"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": true,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Проверить",
+                                    "showSolutionButton": "Показать решение",
+                                    "tryAgainButton": "Повторить",
+                                    "tipsLabel": "Показать подсказку",
+                                    "scoreBarLabel": "Вы получили :num из :total баллов",
+                                    "tipAvailable": "Подсказка доступна",
+                                    "feedbackAvailable": "Доступна обратная связь",
+                                    "readFeedback": "Прочитать отзыв",
+                                    "wrongAnswer": "Неправильный ответ",
+                                    "correctAnswer": "Правильный ответ",
+                                    "shouldCheck": "Должен был быть отмечен",
+                                    "shouldNotCheck": "Не должен был быть отмечен",
+                                    "noInput": "Пожалуйста, ответьте перед просмотром решения",
+                                    "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                    "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                    "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                                },
+                                "confirmCheck": {
+                                    "header": "Завершить ?",
+                                    "body": "Вы уверены, что хотите закончить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Завершить"
+                                },
+                                "confirmRetry": {
+                                    "header": "Повторить ?",
+                                    "body": "Вы уверены, что хотите повторить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Подтвердить"
+                                },
+                                "question": "<p>Каждый день я […] на работу на автобусе.</p>\n"
+                            },
+                            "library": "H5P.MultiChoice 1.14",
+                            "metadata": {
+                                "contentType": "Multiple Choice",
+                                "license": "U",
+                                "title": "Задание 01 (Multiple Choice)",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Задание 01 (Multiple Choice)",
+                                "defaultLanguage": "ru"
+                            },
+                            "subContentId": "bc746819-155c-4d15-9587-2a4d1ca974e1"
+                        },
+                        "useSeparator": "auto"
+                    },
+                    {
+                        "content": {
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>идёт</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ездят</div>\n"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>едет</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ходит</div>\n"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": true,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Проверить",
+                                    "showSolutionButton": "Показать решение",
+                                    "tryAgainButton": "Повторить",
+                                    "tipsLabel": "Показать подсказку",
+                                    "scoreBarLabel": "Вы получили :num из :total баллов",
+                                    "tipAvailable": "Подсказка доступна",
+                                    "feedbackAvailable": "Доступна обратная связь",
+                                    "readFeedback": "Прочитать отзыв",
+                                    "wrongAnswer": "Неправильный ответ",
+                                    "correctAnswer": "Правильный ответ",
+                                    "shouldCheck": "Должен был быть отмечен",
+                                    "shouldNotCheck": "Не должен был быть отмечен",
+                                    "noInput": "Пожалуйста, ответьте перед просмотром решения",
+                                    "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                    "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                    "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                                },
+                                "confirmCheck": {
+                                    "header": "Завершить ?",
+                                    "body": "Вы уверены, что хотите закончить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Завершить"
+                                },
+                                "confirmRetry": {
+                                    "header": "Повторить ?",
+                                    "body": "Вы уверены, что хотите повторить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Подтвердить"
+                                },
+                                "question": "<p>Наташа сейчас […] в спортивный клуб на маршрутке.</p>\n"
+                            },
+                            "library": "H5P.MultiChoice 1.14",
+                            "metadata": {
+                                "contentType": "Multiple Choice",
+                                "license": "U",
+                                "title": "Задание 02 (Multiple Choice)",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Задание 02 (Multiple Choice)",
+                                "defaultLanguage": "ru"
+                            },
+                            "subContentId": "9b7aa94b-9625-4530-8d93-3c8049b6c9fa"
+                        },
+                        "useSeparator": "auto"
+                    },
+                    {
+                        "content": {
+                            "params": {
+                                "media": {
+                                    "disableImageZooming": false
+                                },
+                                "answers": [
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ходит</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>идёт</div>\n"
+                                    },
+                                    {
+                                        "correct": true,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>ездит</div>\n"
+                                    },
+                                    {
+                                        "correct": false,
+                                        "tipsAndFeedback": {
+                                            "tip": "",
+                                            "chosenFeedback": "",
+                                            "notChosenFeedback": ""
+                                        },
+                                        "text": "<div>едет</div>\n"
+                                    }
+                                ],
+                                "overallFeedback": [
+                                    {
+                                        "from": 0,
+                                        "to": 100
+                                    }
+                                ],
+                                "behaviour": {
+                                    "enableRetry": true,
+                                    "enableSolutionsButton": true,
+                                    "enableCheckButton": true,
+                                    "type": "auto",
+                                    "singlePoint": false,
+                                    "randomAnswers": true,
+                                    "showSolutionsRequiresInput": true,
+                                    "confirmCheckDialog": false,
+                                    "confirmRetryDialog": false,
+                                    "autoCheck": false,
+                                    "passPercentage": 100,
+                                    "showScorePoints": true
+                                },
+                                "UI": {
+                                    "checkAnswerButton": "Проверить",
+                                    "showSolutionButton": "Показать решение",
+                                    "tryAgainButton": "Повторить",
+                                    "tipsLabel": "Показать подсказку",
+                                    "scoreBarLabel": "Вы получили :num из :total баллов",
+                                    "tipAvailable": "Подсказка доступна",
+                                    "feedbackAvailable": "Доступна обратная связь",
+                                    "readFeedback": "Прочитать отзыв",
+                                    "wrongAnswer": "Неправильный ответ",
+                                    "correctAnswer": "Правильный ответ",
+                                    "shouldCheck": "Должен был быть отмечен",
+                                    "shouldNotCheck": "Не должен был быть отмечен",
+                                    "noInput": "Пожалуйста, ответьте перед просмотром решения",
+                                    "a11yCheck": "Check the answers. The responses will be marked as correct, incorrect, or unanswered.",
+                                    "a11yShowSolution": "Show the solution. The task will be marked with its correct solution.",
+                                    "a11yRetry": "Retry the task. Reset all responses and start the task over again."
+                                },
+                                "confirmCheck": {
+                                    "header": "Завершить ?",
+                                    "body": "Вы уверены, что хотите закончить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Завершить"
+                                },
+                                "confirmRetry": {
+                                    "header": "Повторить ?",
+                                    "body": "Вы уверены, что хотите повторить ?",
+                                    "cancelLabel": "Отменить",
+                                    "confirmLabel": "Подтвердить"
+                                },
+                                "question": "<p>Михаил […] в Москву каждый месяц.</p>\n"
+                            },
+                            "library": "H5P.MultiChoice 1.14",
+                            "metadata": {
+                                "contentType": "Multiple Choice",
+                                "license": "U",
+                                "title": "Задание 03 (Multiple Choice)",
+                                "authors": [],
+                                "changes": [],
+                                "extraTitle": "Задание 03 (Multiple Choice)",
+                                "defaultLanguage": "ru"
+                            },
+                            "subContentId": "5435f90d-6bd4-4e01-9dbf-c058d01ce877"
+                        },
+                        "useSeparator": "auto"
+                    }
+                ]
+            },
+            "library": "H5P.Column 1.13",
+            "subContentId": "aaea6237-cdc3-4154-b455-6a85f24e675b",
+            "metadata": {
+                "contentType": "Column",
+                "license": "U",
+                "title": "ехать/ездить",
+                "authors": [],
+                "changes": [],
+                "extraTitle": "ехать/ездить",
+                "defaultLanguage": "ru"
+            }
+        }
+    ],
+    "behaviour": {
+        "defaultTableOfContents": true,
+        "progressIndicators": true,
+        "progressAuto": true,
+        "displaySummary": true
+    },
+    "read": "Читать",
+    "displayTOC": "Показать содержание",
+    "hideTOC": "Скрыть содержание",
+    "nextPage": "Следующая страница",
+    "previousPage": "Предыдущая страница",
+    "chapterCompleted": "Задания выполнены!",
+    "partCompleted": "@pages из @total выполнено",
+    "incompleteChapter": "Incomplete page",
+    "navigateToTop": "К началу страницы",
+    "markAsFinished": "Я выполнил задания этой страницы",
+    "fullscreen": "Развернуть на весь экран",
+    "exitFullscreen": "Выйти из полноэкранного режима",
+    "bookProgressSubtext": "Страница @count из @total",
+    "interactionsProgressSubtext": "@count из @total просмотрено",
+    "submitReport": "Итоги",
+    "restartLabel": "Перепройти",
+    "summaryHeader": "Итоги курса",
+    "allInteractions": "Всего заданий просмотрено",
+    "unansweredInteractions": "Невыполненные задания",
+    "scoreText": "@score / @maxscore",
+    "leftOutOfTotalCompleted": "Осталось на странице @left из @max",
+    "noInteractions": "Заданий нет",
+    "score": "Баллы",
+    "summaryAndSubmit": "Отправить ответы",
+    "noChapterInteractionBoldText": "Вы не завершили ни одной страницы.",
+    "noChapterInteractionText": "Для показа Итогов требуется завершить хотя бы одну страницу.",
+    "yourAnswersAreSubmittedForReview": "Ваши ответы отправлены!",
+    "bookProgress": "Страниц просмотрено",
+    "interactionsProgress": "Заданий просмотрено",
+    "totalScoreLabel": "Набрано баллов",
+    "a11y": {
+        "progress": "Page @page of @total.",
+        "menu": "Toggle navigation menu"
+    }
+}
