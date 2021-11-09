@@ -126,8 +126,10 @@ export class H5PPlayer extends Ctr.UIControl {
 				frameJs: App.makeThirdPartyPath("h5p/standalone/frame.bundle.js"),
 				frameCss: App.makeThirdPartyPath("h5p/standalone/styles/h5p.css"),
 				librariesPath: App.makeThirdPartyPath("h5p/libraries"),
+				fullScreen: false,
 				id: Date.now(),
-				xAPIObjectIRI: this.id
+				xAPIObjectIRI: this.id,
+				metadata: {}
 			};
 			this._optionsH5P = options;
 			//

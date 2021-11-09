@@ -48,6 +48,11 @@ export abstract class H5PController {
 					//
 					let H5P = (App.getGlobalVar("H5P"));
 					if (H5P) {
+						let H5PIntegration = (App.getGlobalVar("H5PIntegration"));
+						if (H5PIntegration) {
+							H5PIntegration.fullscreenDisabled = true;
+						}
+						//
 						H5P.externalDispatcher.on("xAPI", this._onH5PxAPI.bind(this));
 					} else {
 						throw new Error("H5P global object was not created!");
