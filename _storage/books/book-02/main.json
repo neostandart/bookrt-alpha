@@ -137,7 +137,7 @@
         },
         "properties": {
           "kind": "normal",
-          "life": "persistent",
+          "life": "forever",
           "path": "pages/03-kontrol'/page.html",
           "title": "Итоговый тест"
         }
