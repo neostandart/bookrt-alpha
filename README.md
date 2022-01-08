@@ -50,7 +50,7 @@ The Textbooks Runtime System
 
 - Программная платформа [Node.js](https://nodejs.org/en/);
 
-- Таск-менеджер [Gulp.js](https://gulpjs.com/). Установить Gulp из консоли можно след. образом:
+- Утилита командной строки Gulp [Command Line Utility for Gulp](https://www.npmjs.com/package/gulp-cli). Установить её из консоли можно след. образом:
 	```
 	npm install --global gulp-cli
 	```
