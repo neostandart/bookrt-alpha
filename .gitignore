@@ -9,6 +9,7 @@
 .history/
 
 # Solution
+package-lock.json
 node_modules/
 app/
 code/
